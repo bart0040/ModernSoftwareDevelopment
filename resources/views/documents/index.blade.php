@@ -4,7 +4,7 @@
     <table class="table">
         <thead>
 
-        <a href="/documents/create" class="button is-primary">Add new document</a>
+        <a href="/documents/create" class="">Add new document</a>
         <tr>
             <td>ID</td>
             <td>Project Name</td>
