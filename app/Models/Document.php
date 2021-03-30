@@ -9,7 +9,7 @@ class Document extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        //#todo fill
+    protected $guarded = [
+
     ];
 }

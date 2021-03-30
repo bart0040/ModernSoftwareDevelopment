@@ -1,20 +1,20 @@
+<header>
+    <p>
+        Edit this Document
+    </p>
+</header>
 <form method="POST" action="{{ route('documents.update', $document) }}">
     @csrf
     @method('PUT')
-    <header>
-        <p>
-            Edit this Document
-        </p>
-    </header>
 
     {{-- Here are all the form fields --}}
     <div class="field">
         <label class="label">Project name: </label>
         <div class="control">
-            <input name="projectName" class="input @error('projectName') is-danger @enderror"
-                   type="text" value="{{ old('projectName', $document->project_name) }}">
+            <input name="project_name" class="input @error('project_name') is-danger @enderror"
+                   type="text" value="{{ old('project_name', $document->project_name) }}">
         </div>
-        @error('projectName')
+        @error('project_name')
         <p class="help is-danger">{{ $message }}</p>
         @enderror
     </div>
@@ -22,10 +22,10 @@
     <div class="field">
         <label class="label">Document name: </label>
         <div class="control">
-            <input name="documentName" class="input @error('documentName') is-danger @enderror"
-                   type="text" value="{{ old('documentName', $document->document_name) }}">
+            <input name="document_name" class="input @error('document_name') is-danger @enderror"
+                   type="text" value="{{ old('document_name', $document->document_name) }}">
         </div>
-        @error('documentName')
+        @error('document_name')
         <p class="help is-danger">{{ $message }}</p>
         @enderror
     </div>
@@ -75,14 +75,23 @@
     </div>
     {{-- Here are the form buttons: save, reset and cancel --}}
     <div class="control">
-        <a type="submit" href="{{route('documents.edit', $document) }}" class="">Save</a>
+        <button type="submit" class="">Save</button>
     </div>
-    <div class="control">
-        <a type="delete" href="{{route('documents.destroy', $document) }}" class="" value="delete">Delete</a>
-    </div>
-    <div class="control">
-        <a type="button" href="{{route('documents.index')}}" class="">Cancel</a>
-    </div>
-
 
 </form>
+
+<form action="/documents/{{ $document->id }}" method="POST">
+    @csrf
+    @method('DELETE')
+    <button type="submit">Delete</button>
+</form>
+
+<form action="/documents" method="GET">
+    <button type="submit">Cancel</button>
+</form>
+
+
+
+
+
+

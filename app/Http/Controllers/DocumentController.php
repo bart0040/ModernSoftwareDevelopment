@@ -3,14 +3,21 @@
 namespace App\Http\Controllers;
 
 use App\Models\Document;
+use Exception;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
 
 class DocumentController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @return Application|Factory|View|Response
      */
     public function index()
     {
@@ -21,7 +28,8 @@ class DocumentController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @param Document $document
+     * @return Application|Factory|View|Response
      */
     public function create(Document $document)
     {
@@ -31,8 +39,8 @@ class DocumentController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
+     * @param Request $request
+     * @return Application|RedirectResponse|Response|Redirector
      */
     public function store(Request $request)
     {
@@ -45,10 +53,10 @@ class DocumentController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Document  $document
-     * @return \Illuminate\Http\Response
+     * @param Document $document
+     * @return Response
      */
-    public function show(Document $document)
+    public function show(Document $document): Response
     {
         //
     }
@@ -56,8 +64,8 @@ class DocumentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Document  $document
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @param Document $document
+     * @return Application|Factory|View|Response
      */
     public function edit(Document $document)
     {
@@ -67,22 +75,22 @@ class DocumentController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Document  $document
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
+     * @param Request $request
+     * @param Document $document
+     * @return Application|RedirectResponse|Response|Redirector
      */
     public function update(Request $request, Document $document)
     {
         $document->update($this->validateDocument($request));
-        return redirect(route('documents.index'))->with('status', 'Documents is altered');
+        return redirect('/documents');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Models\Document $document
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
-     * @throws \Exception
+     * @param Document $document
+     * @return Application|RedirectResponse|Response|Redirector
+     * @throws Exception
      */
     public function destroy(Document $document)
     {
@@ -90,14 +98,15 @@ class DocumentController extends Controller
         return redirect(route('documents.index'))->with('status', 'document is deleted');
     }
 
-    private function validateDocument(Request $request): array
+    public function validateDocument(Request $request): array
     {
-        return  $request->validate([
+        return $request->validate([
             'author' => 'required',
             'project_name' => 'required',
             'document_name' => 'required',
             'keywords' => 'required',
             'language' => 'required',
+            'document' => 'required',
         ]);
     }
 }
