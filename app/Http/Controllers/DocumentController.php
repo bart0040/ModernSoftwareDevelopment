@@ -32,11 +32,14 @@ class DocumentController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function store(Request $request)
     {
-        //
+        Document::create($this->validateDocument($request));
+
+        return redirect(route('documents.index'))->with('status', 'Document created successful');
+
     }
 
     /**
@@ -54,11 +57,11 @@ class DocumentController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Document  $document
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function edit(Document $document)
     {
-        //
+        return view('documents.edit', ['document' => $document]);
     }
 
     /**
@@ -66,21 +69,35 @@ class DocumentController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Document  $document
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function update(Request $request, Document $document)
     {
-        //
+        $document->update($this->validateDocument($request));
+        return redirect(route('documents.index'))->with('status', 'Documents is altered');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Document  $document
-     * @return \Illuminate\Http\Response
+     * @param \App\Models\Document $document
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
+     * @throws \Exception
      */
     public function destroy(Document $document)
     {
-        //
+        $document->delete();
+        return redirect(route('documents.index'))->with('status', 'document is deleted');
+    }
+
+    private function validateDocument(Request $request): array
+    {
+        return  $request->validate([
+            'author' => 'required',
+            'project_name' => 'required',
+            'document_name' => 'required',
+            'keywords' => 'required',
+            'language' => 'required',
+        ]);
     }
 }

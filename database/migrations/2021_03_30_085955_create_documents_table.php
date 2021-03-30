@@ -19,6 +19,7 @@ class CreateDocumentsTable extends Migration
             $table->string('project_name');
             $table->string('document_name');
             $table->string('keywords');
+            $table->string('language');
             //#TODO make it a longText into a document type.
             $table->longText('document');
             $table->timestamps();
