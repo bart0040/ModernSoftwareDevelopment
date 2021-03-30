@@ -17,10 +17,18 @@
 
     <!--Menu-->
 
-    <ul>
-        <li><a>Home</a></li>
-        <li><a>Bestanden</a></li>
-    </ul>
+    <lu>
+        <li>
+            <a href="/"
+            {{ Request::path() === '/' ? "is-active" : "" }}">
+            Home
+            </a>
+            <a href="/documents"
+            {{ Request::path() === 'documents' ? "is-active" : "" }}">
+            Documents
+            </a>
+        </li>
+    </lu>
 
     @yield('content')
 </div>

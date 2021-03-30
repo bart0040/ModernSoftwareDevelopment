@@ -21,7 +21,6 @@ class CreateDocumentsTable extends Migration
             $table->string('keywords');
             //#TODO make it a longText into a document type.
             $table->longText('document');
-            $table->timestamp('created_at')->useCurrent();
             $table->timestamps();
         });
     }
