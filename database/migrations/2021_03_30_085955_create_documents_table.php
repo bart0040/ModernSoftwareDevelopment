@@ -15,6 +15,13 @@ class CreateDocumentsTable extends Migration
     {
         Schema::create('documents', function (Blueprint $table) {
             $table->id();
+            $table->string('author');
+            $table->string('project_name');
+            $table->string('document_name');
+            $table->string('keywords');
+            //#TODO make it a longText into a document type.
+            $table->longText('document');
+            $table->timestamp('created_at')->useCurrent();
             $table->timestamps();
         });
     }
