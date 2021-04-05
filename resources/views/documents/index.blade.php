@@ -1,19 +1,18 @@
 @extends('layout')
 
 @section('content')
-    <table class="table">
+    <br>
+    <table class="table" id="table">
         <thead>
-
-        <a href="/documents/create" class="">Add new document</a>
         <tr>
-            <td>Project Name</td>
-            <td>Document Name</td>
-            <td>Author</td>
-            <td>Document</td>
-            <td>Keywords</td>
-            <td>Language</td>
-            <td>Created at</td>
-            <td>Actions</td>
+            <th>Project Name</th>
+            <th>Document Name</th>
+            <th>Author</th>
+            <th>Document</th>
+            <th>Keywords</th>
+            <th>Language</th>
+            <th>Created at</th>
+            <th>Edit</th>
         </tr>
         </thead>
         <tbody>
@@ -31,5 +30,9 @@
         @endforeach
         </tbody>
     </table>
+    <br>
 
+    <a href="/documents/create">
+    <button> Add new document </button>
+    </a>
 @endsection

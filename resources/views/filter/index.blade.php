@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <p>filters</p>;
+    <p>filters</p>
     <form method="POST" action="/showFiltered">
         @csrf
     @foreach($filters as $filter)
@@ -13,7 +13,7 @@
 
     <h1>Alle Documenten</h1>
     @foreach($documenten as $document)
-    <p style="padding-left: 6.5%;">{{ $document->project_name }}</p>
+    <p>{{ $document->project_name }}</p>
     @endforeach
 
 @endsection
