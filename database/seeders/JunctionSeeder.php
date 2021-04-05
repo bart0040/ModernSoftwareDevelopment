@@ -3,9 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use mysql_xdevapi\Table;
 
-class DocumentSeeder extends Seeder
+class JunctionSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,5 +13,6 @@ class DocumentSeeder extends Seeder
      */
     public function run()
     {
+        //
     }
 }

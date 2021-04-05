@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\FilterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 Route::resource('/documents',
     DocumentController::class);
+Route::resource('/filter', Filtercontroller::class, ['except' => ['create', 'show']]);
+Route::post('/showFiltered', [FilterController::class, 'showFiltered']);

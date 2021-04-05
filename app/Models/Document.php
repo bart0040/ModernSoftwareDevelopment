@@ -12,4 +12,8 @@ class Document extends Model
     protected $guarded = [
 
     ];
+
+    public function filters(){
+        return $this->belongsToMany(Filter::class);
+    }
 }

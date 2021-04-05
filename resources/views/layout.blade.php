@@ -27,6 +27,10 @@
             {{ Request::path() === 'documents' ? "is-active" : "" }}">
             Documents
             </a>
+            <a href="/filter"
+            {{ Request::path() === 'filter' ? "is-active" : "" }}">
+            Filter
+            </a>
         </li>
     </lu>
 

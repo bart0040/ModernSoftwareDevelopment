@@ -19,6 +19,42 @@
         </tr>
         <tr>
             <td>
+                <label for="project_name"><strong>Filter A:</strong></label>
+            </td>
+            <td>
+                <input type="checkbox" id="filter_id" name="filter_ids[]" value="1">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="project_name"><strong>Filter B:</strong></label>
+            </td>
+            <td>
+                <input type="checkbox" id="filter_id" name="filter_ids[]" value="2">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <label for="project_name"><strong>Filter C:</strong></label>
+            </td>
+            <td>
+                <input type="checkbox" id="filter_id" name="filter_ids[]" value="3">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="project_name"><strong>Filter D:</strong></label>
+            </td>
+            <td>
+                <input type="checkbox" id="filter_id" name="filter_ids[]" value="4">
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <label for="document_name"><strong>Document Name:</strong></label>
             </td>
             <td>
