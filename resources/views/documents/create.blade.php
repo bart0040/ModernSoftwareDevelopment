@@ -1,5 +1,5 @@
 <table>
-    <form action="/documents" method="POST">
+    <form action="/documents" method="POST" enctype="multipart/form-data">
         @csrf
         <tr>
             <td>
@@ -85,17 +85,26 @@
                 <input type="text" id="document" name="document">
             </td>
         </tr>
+{{--        <tr>--}}
+{{--            <td>--}}
+{{--                <label><strong>Upload File:</strong></label>--}}
+{{--            </td>--}}
+{{--            <td>--}}
+{{--                <input type="file" name="file" class="form-control">--}}
+{{--            </td>--}}
+{{--        </tr>--}}
         <tr>
             <td>
                 <input type="submit" value="Submit">
             </td>
+        </tr>
     </form>
     <td>
         <form action="/documents" method="GET">
             <input type="submit" value="cancel">
         </form>
     </td>
-    </tr>
+
 
 
 </table>

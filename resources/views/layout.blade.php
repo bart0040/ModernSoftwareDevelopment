@@ -17,22 +17,19 @@
 
     <!--Menu-->
 
-    <lu>
-        <li>
-            <a href="/"
-            {{ Request::path() === '/' ? "is-active" : "" }}">
-            Home
-            </a>
-            <a href="/documents"
-            {{ Request::path() === 'documents' ? "is-active" : "" }}">
-            Documents
-            </a>
-            <a href="/filter"
-            {{ Request::path() === 'filter' ? "is-active" : "" }}">
-            Filter
-            </a>
-        </li>
-    </lu>
+    <ul>
+        <div class="wrapper">
+            <li>
+                <a href="/" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>
+            </li>
+            <li>
+                <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
+            </li>
+            <li>
+                <a href="/filter" {{ Request::path() === 'filter' ? "is-active" : "" }}"> Filter </a>
+            </li>
+        </div>
+    </ul>
 
     @yield('content')
 </div>

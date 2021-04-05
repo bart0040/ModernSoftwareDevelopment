@@ -44,12 +44,18 @@ class DocumentController extends Controller
      */
     public function store(Request $request)
     {
+        //Code for saving a file
+        //$request
+
+
+
         $document = Document::create($this->validateDocument($request));
+
         $d_id = $document->id;
+
         foreach($request->filter_ids as $f_id){
             \DB::table('junctions')->insert(array('document_id' => $d_id, 'filter_id' => $f_id));
-    }
-
+         }
 
         return redirect(route('documents.index'))->with('status', 'Document created successful');
 

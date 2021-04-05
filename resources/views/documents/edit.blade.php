@@ -1,7 +1,7 @@
 <header>
-    <p>
+    <H1>
         Edit this Document
-    </p>
+    </H1>
 </header>
 <form method="POST" action="{{ route('documents.update', $document) }}">
     @csrf
