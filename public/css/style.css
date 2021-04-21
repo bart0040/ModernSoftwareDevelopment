@@ -1,23 +1,44 @@
-.wrapper{
-    margin-left: 5%;
-    margin-right: 5%;
+body {
+    font-family: "PT Sans", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
 }
 
-.header{
-    padding: 20px;
+nav.top-bar {
+    height: 5.625rem;
+    line-height: 5.625rem;
     text-align: center;
-    background: #383c4a;
-    color: #5294e2;
+    background: #FFFFFF;
+
     font-size: 25px;
-    font-family: sans-serif;
+    font-family: "PT Sans", sans-serif !important;
+
 }
+
+
+.dark-blue-background {
+    background-color: #005095;
+    color: white;
+    float: right;
+
+}
+
+.blue-background {
+    background-color: #007acc;
+    color: white;
+}
+
+.light-blue-background {
+    background-color: #009edc;
+    color: white;
+}
+
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #7c818c;
+    /*background-color: #7c818c;*/
 }
 
 li {
@@ -29,25 +50,20 @@ li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: #7c818c;
-    transform:scale(1.1);
-    animation-name: background-color;
-    animation-duration: 1000ms;
-    cursor: pointer;
+
+.text {
+    background-color: white;
+    width: 1000px;
+
 }
 
-.text{
-    text-align: center;
-    background-color:lightpink;
-}
-
-.body{
+body {
     background-color: #f6f6f6;
+
 }
 
 p {
@@ -65,9 +81,13 @@ p {
     padding: 8px;
 }
 
-#table tr:nth-child(even){background-color: #f2f2f2;}
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-#table tr:hover {background-color: #ddd;}
+#table tr:hover {
+    background-color: #ddd;
+}
 
 #table th {
     padding-top: 12px;
@@ -90,4 +110,46 @@ label {
 input {
     float: left;
     /*width: calc(100% - 200px);*/
+}
+
+.hz-logo {
+    padding: 1.25rem;
+    height: 5.625rem;
+    display: block;
+    vertical-align: middle;
+    border: none;
+}
+
+.ul > li:last-child {
+    float: right;
+}
+
+.ENHZ {
+    float: right;
+}
+
+.MYHZ {
+    float: right;
+}
+
+.home{
+    padding: 20px;
+    background-color: #009edc;
+    color: white;
+}
+
+.documents{
+    padding: 20px;
+    background-color: #007acc;
+    color: white;
+}
+
+.filter{
+    padding: 20px;
+    background-color: #005095;
+    color: white;
+}
+
+.text{
+    margin: auto;
 }

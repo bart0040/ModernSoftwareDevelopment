@@ -2,7 +2,8 @@
 
 @section('content')
 
-    <div class="text" style="background-color:white">
+    <div class="text">
+        <div class="wrapper">
         <h1>Healthy Region<br></h1>
 
         <p style="font-family: inherit">Toerisme, vitaliteit, bewegen, welzijn, gezondheid én Zeeland. Wat ontstaat er als je
@@ -39,5 +40,6 @@
             burgers als toeristen gebruik kunnen maken van betere dienstverlening en producten? In dit thema worden twee
             zeer diverse sectoren met elkaar verbonden. </p>
         <p><img src="{{asset('healthyregion.jpg')}}"> </p>
+        </div>
     </div>
 @endsection
