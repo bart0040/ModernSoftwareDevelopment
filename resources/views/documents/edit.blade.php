@@ -76,6 +76,7 @@
             <p class="help is-danger">{{ $message }}</p>
             @enderror
         </div>
+
         <div class="field">
             <label class="label">Language: </label>
             <div class="control">
@@ -89,24 +90,38 @@
             <p class="help is-danger">{{ $message }}</p>
             @enderror
         </div>
+
         {{-- Here are the form buttons: save, reset and cancel --}}
         <div class="outer">
             <div class="inner">
-                <button type="submit" class="button" id="button1">Save</button>
+                <button
+                    type="submit"
+                    class="button"
+                    id="button1">
+                    Save</button>
             </div>
         </div>
     </form>
+
     <div class="inner">
         <form action="/documents/{{ $document->id }}" method="POST">
             @csrf
             @method('DELETE')
-            <button type="submit" class="button" id="button2">Delete</button>
+            <button
+                type="submit"
+                class="button"
+                id="button2">
+                Delete</button>
         </form>
     </div>
 
     <div class="inner">
         <form action="/documents" method="GET">
-            <button type="submit" class="button" id="button3">Cancel</button>
+            <button
+                type="submit"
+                class="button"
+                id="button3">
+                Cancel</button>
         </form>
     </div>
 @endsection

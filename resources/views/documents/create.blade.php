@@ -74,30 +74,30 @@
         </div>
 
         <div class="field">
-        <label for="keywords" class="label"><strong>Keywords:</strong></label>
-        <input
-            class="input"
-            type="text"
-            id="keywords"
-            name="keywords">
+            <label for="keywords" class="label"><strong>Keywords:</strong></label>
+            <input
+                class="input"
+                type="text"
+                id="keywords"
+                name="keywords">
         </div>
 
         <div class="field">
-        <label for="language" class="label"><strong>Language:</strong></label>
-        <input
-            class="input"
-            type="text"
-            id="language"
-            name="language">
+            <label for="language" class="label"><strong>Language:</strong></label>
+            <input
+                class="input"
+                type="text"
+                id="language"
+                name="language">
         </div>
 
         <div class="field">
-        <label for="document" class="label"><strong>Document:</strong></label>
-        <input
-            class="input"
-            type="text"
-            id="document"
-            name="document">
+            <label for="document" class="label"><strong>Document:</strong></label>
+            <input
+                class="input"
+                type="text"
+                id="document"
+                name="document">
         </div>
 
         {{--        <tr>--}}
@@ -109,11 +109,19 @@
         {{--            </td>--}}
         {{--        </tr>--}}
 
-        <input type="submit" class="button" id="button1" value="Submit">
+        <input
+            type="submit"
+            class="button"
+            id="button1"
+            value="Submit">
     </form>
-    <td>
-        <form action="/documents" method="GET">
-            <input type="submit" class="button" id="button3" value="Cancel">
-        </form>
-    </td>
+
+    <form action="/documents" method="GET">
+        <input
+            type="submit"
+            class="button"
+            id="button3"
+            value="Cancel">
+    </form>
+
 @endsection
