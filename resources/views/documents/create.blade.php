@@ -103,12 +103,11 @@
         {{--            </td>--}}
         {{--        </tr>--}}
 
-        <input type="submit" value="Submit">
+        <input type="submit" class="button" id="button1" value="Submit">
     </form>
     <td>
         <form action="/documents" method="GET">
-            <input type="submit" value="cancel">
+            <input type="submit" class="button" id="button3" value="Cancel">
         </form>
     </td>
-
 @endsection
