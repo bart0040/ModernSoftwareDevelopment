@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-    <br>
     <table class="table" id="table">
         <thead>
         <tr>
@@ -33,6 +32,6 @@
     <br>
 
     <a href="/documents/create">
-    <button> Add new document </button>
+    <button class="button" id="addDocBut"> Add new document </button>
     </a>
 @endsection

@@ -1,3 +1,5 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+
 .wrapper{
     margin-left: 5%;
     margin-right: 5%;
@@ -57,7 +59,9 @@ p {
 #table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+    /*padding: 10%;*/
 }
 
 #table td, #table th {
@@ -79,6 +83,8 @@ p {
 
 form {
     overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
 }
 
 label {
@@ -91,3 +97,30 @@ input {
     float: left;
     /*width: calc(100% - 200px);*/
 }
+
+#button1 {
+    background-color: lightgreen;
+}
+#button2{
+    background-color: indianred;
+}
+#button3{
+    background-color: lightyellow;
+}
+
+#outer{
+    width: 100%;
+    text-align: center;
+}
+
+#editH1{
+    margin-left: 5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#addDocBut{
+    background-color: cornflowerblue;
+    margin-left: 5%;
+}
+
