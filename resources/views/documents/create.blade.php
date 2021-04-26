@@ -73,26 +73,32 @@
                 name="document_name">
         </div>
 
+        <div class="field">
         <label for="keywords" class="label"><strong>Keywords:</strong></label>
         <input
             class="input"
             type="text"
             id="keywords"
             name="keywords">
+        </div>
 
+        <div class="field">
         <label for="language" class="label"><strong>Language:</strong></label>
         <input
             class="input"
             type="text"
             id="language"
             name="language">
+        </div>
 
+        <div class="field">
         <label for="document" class="label"><strong>Document:</strong></label>
         <input
             class="input"
             type="text"
             id="document"
             name="document">
+        </div>
 
         {{--        <tr>--}}
         {{--            <td>--}}
