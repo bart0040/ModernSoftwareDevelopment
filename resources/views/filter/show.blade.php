@@ -12,10 +12,7 @@
     </form>
     <h1>show page</h1>
 
-    @foreach($DwithoutD as $array)
-        @foreach($array as $document)
-            <p>{{ $document->project_name}}</p>
-        @endforeach
+    @foreach($z as $document)
+        <p>{{ $document->project_name }}</p>
     @endforeach
-
 @endsection
