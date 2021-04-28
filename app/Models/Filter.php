@@ -12,7 +12,7 @@ class Filter extends Model
     protected $guarded = [];
 
     public function documents(){
-        return $this->belongsToMany(Document::class);
+        return $this->belongsToMany(Document::class, 'junctions', 'filter_id', 'document_id');
     }
     public function path(){
         return route('filter.show', $this);

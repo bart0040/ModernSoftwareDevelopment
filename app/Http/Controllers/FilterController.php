@@ -34,7 +34,7 @@ class FilterController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -42,30 +42,21 @@ class FilterController extends Controller
         //
     }
 
-    public function showFiltered(Request $request){
-        $junctions = [];
-        foreach($request->filters as $filter){
-            array_push($junctions, Junction::all()->where('filter_id', $filter));
-
-        }
-        $documentsWithFilter = [];
-        foreach($junctions as $junctionArray){
-            foreach($junctionArray as $junction) {
-                $document = Document::all()->where('id', $junction->document_id);
-                array_push($documentsWithFilter, $document);
-            }
-        }
-        $DwithoutD= array_unique($documentsWithFilter);
+    public function showFiltered(Request $request)
+    {
+        $filterIds = $request->filters;
         $filters = Filter::all();
+        $z = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds){
+            $q->whereIn('filter_id', $filterIds);
+        }, '=', count($filterIds))->get();
 
-
-        return view('filter.show', compact('DwithoutD', 'filters'));
+        return view('filter.show', compact('z', 'filters'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Filter  $filter
+     * @param \App\Models\Filter $filter
      * @return \Illuminate\Http\Response
      */
 //    public function show(Filter $filter)
@@ -83,7 +74,7 @@ class FilterController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Filter  $filter
+     * @param \App\Models\Filter $filter
      * @return \Illuminate\Http\Response
      */
     public function edit(Filter $filter)
@@ -94,8 +85,8 @@ class FilterController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Filter  $filter
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\Filter $filter
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Filter $filter)
@@ -106,7 +97,7 @@ class FilterController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Filter  $filter
+     * @param \App\Models\Filter $filter
      * @return \Illuminate\Http\Response
      */
     public function destroy(Filter $filter)
