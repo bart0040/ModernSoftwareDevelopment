@@ -1,44 +1,25 @@
-body {
-    font-family: "PT Sans", sans-serif !important;
-    -webkit-font-smoothing: antialiased;
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+
+.wrapper{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-nav.top-bar {
-    height: 5.625rem;
-    line-height: 5.625rem;
+.header{
+    padding: 20px;
     text-align: center;
-    background: #FFFFFF;
-
+    background: #383c4a;
+    color: #5294e2;
     font-size: 25px;
-    font-family: "PT Sans", sans-serif !important;
-
+    font-family: sans-serif;
 }
-
-
-.dark-blue-background {
-    background-color: #005095;
-    color: white;
-    float: right;
-
-}
-
-.blue-background {
-    background-color: #007acc;
-    color: white;
-}
-
-.light-blue-background {
-    background-color: #009edc;
-    color: white;
-}
-
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: #7c818c;*/
+    background-color: #7c818c;
 }
 
 li {
@@ -50,20 +31,25 @@ li a {
     display: block;
     color: black;
     text-align: center;
-
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-
-.text {
-    background-color: white;
-    width: 1000px;
-
+li a:hover:not(.active) {
+    background-color: #7c818c;
+    transform:scale(1.1);
+    animation-name: background-color;
+    animation-duration: 1000ms;
+    cursor: pointer;
 }
 
-body {
-    background-color: #f6f6f6;
+.text{
+    text-align: center;
+    background-color:lightpink;
+}
 
+.body{
+    background-color: #f6f6f6;
 }
 
 p {
@@ -73,7 +59,9 @@ p {
 #table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+    /*padding: 10%;*/
 }
 
 #table td, #table th {
@@ -81,13 +69,9 @@ p {
     padding: 8px;
 }
 
-#table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
+#table tr:nth-child(even){background-color: #f2f2f2;}
 
-#table tr:hover {
-    background-color: #ddd;
-}
+#table tr:hover {background-color: #ddd;}
 
 #table th {
     padding-top: 12px;
@@ -99,6 +83,8 @@ p {
 
 form {
     overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
 }
 
 label {
@@ -112,44 +98,29 @@ input {
     /*width: calc(100% - 200px);*/
 }
 
-.hz-logo {
-    padding: 1.25rem;
-    height: 5.625rem;
-    display: block;
-    vertical-align: middle;
-    border: none;
+#button1 {
+    background-color: lightgreen;
+}
+#button2{
+    background-color: indianred;
+}
+#button3{
+    background-color: lightyellow;
 }
 
-.ul > li:last-child {
-    float: right;
+#outer{
+    width: 100%;
+    text-align: center;
 }
 
-.ENHZ {
-    float: right;
+#editH1{
+    margin-left: 5%;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.MYHZ {
-    float: right;
+#addDocBut{
+    background-color: cornflowerblue;
+    margin-left: 5%;
 }
 
-.home{
-    padding: 20px;
-    background-color: #009edc;
-    color: white;
-}
-
-.documents{
-    padding: 20px;
-    background-color: #007acc;
-    color: white;
-}
-
-.filter{
-    padding: 20px;
-    background-color: #005095;
-    color: white;
-}
-
-.text{
-    margin: auto;
-}

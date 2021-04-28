@@ -14,6 +14,6 @@ class Document extends Model
     ];
 
     public function filters(){
-        return $this->belongsToMany(Filter::class);
+        return $this->belongsToMany(Filter::class, 'junctions', 'document_id', 'filter_id');
     }
 }
