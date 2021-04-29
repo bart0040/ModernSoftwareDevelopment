@@ -115,19 +115,19 @@
             </select>
         </div>
 
-        <div class="field">
-            <label for="file_type" class="label"><strong>File type:</strong></label>
-            <select
-                class="input"
-                type="text"
-                id="file_type"
-                name="file_type">
-                <option value="Word">Word</option>
-                <option value="Powerpoint">Powerpoint</option>
-                <option value="Excel">Excel</option>
-                <option value="Pdf">Pdf</option>
-            </select>
-        </div>
+{{--        <div class="field">--}}
+{{--            <label for="file_type" class="label"><strong>File type:</strong></label>--}}
+{{--            <select--}}
+{{--                class="input"--}}
+{{--                type="text"--}}
+{{--                id="file_type"--}}
+{{--                name="file_type">--}}
+{{--                <option value="Word">Word</option>--}}
+{{--                <option value="Powerpoint">Powerpoint</option>--}}
+{{--                <option value="Excel">Excel</option>--}}
+{{--                <option value="Pdf">Pdf</option>--}}
+{{--            </select>--}}
+{{--        </div>--}}
 
         <div class="field">
             <label for="document" class="label"><strong>Document:</strong></label>

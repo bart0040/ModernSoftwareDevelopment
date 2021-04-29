@@ -20,7 +20,7 @@ class CreateDocumentsTable extends Migration
             $table->string('document_name');
             $table->string('keywords');
             $table->string('language');
-            $table->string('file_type');
+//            $table->string('file_type');
             //#TODO make it a longText into a document type.
             $table->longText('document');
             $table->timestamps();
