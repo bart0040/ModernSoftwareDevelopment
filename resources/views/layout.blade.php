@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Healthy Region</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-
-    <link rel="stylesheet" href="{{asset('/css/style.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
 
 </head>
 <body>
@@ -22,7 +21,6 @@
         <li class="ENHZ">
             <a class="dark-blue-background" href="https://hz.nl/en/">
                 <i id="globe" class="fas fa-globe"></i>
-
                 EN
             </a>
         </li>
@@ -53,7 +51,7 @@
 <ul>
     <div class="wrapper">
         <li class="home">
-            <a href="/" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>
+            <a href="/" id="kaas" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>
         </li>
         <li class="documents">
             <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>

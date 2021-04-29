@@ -30,48 +30,68 @@
 
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Filter A:</strong></label>
+            <div class="control">
             <input
                 type="checkbox"
                 id="filter_id"
                 name="filter_ids[]"
                 value="1">
+            </div>
         </div>
+
+        <br>
 
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Filter B:</strong></label>
+            <div class="control">
             <input
                 type="checkbox"
                 id="filter_id"
                 name="filter_ids[]"
                 value="2">
+            </div>
         </div>
+
+        <br>
 
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Filter C:</strong></label>
+            <div class="control">
             <input
                 type="checkbox"
                 id="filter_id"
                 name="filter_ids[]"
                 value="3">
+            </div>
         </div>
+
+        <br>
 
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Filter D:</strong></label>
+            <div class="control">
             <input
                 type="checkbox"
                 id="filter_id"
                 name="filter_ids[]"
                 value="4">
+            </div>
         </div>
+
+        <br>
 
         <div class="field">
             <label for="document_name" class="label"><strong>Document Name:</strong></label>
+            <div class="control">
             <input
                 class="input"
                 type="text"
                 id="document_name"
                 name="document_name">
+            </div>
         </div>
+
+        <br>
 
         <div class="field">
             <label for="keywords" class="label"><strong>Keywords:</strong></label>
@@ -84,30 +104,39 @@
 
         <div class="field">
             <label for="language" class="label"><strong>Language:</strong></label>
-            <input
+            <select
                 class="input"
                 type="text"
                 id="language"
                 name="language">
+                <option value="Dutch">Dutch</option>
+                <option value="English">English</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="file_type" class="label"><strong>File type:</strong></label>
+            <select
+                class="input"
+                type="text"
+                id="file_type"
+                name="file_type">
+                <option value="Word">Word</option>
+                <option value="Powerpoint">Powerpoint</option>
+                <option value="Excel">Excel</option>
+                <option value="Pdf">Pdf</option>
+            </select>
         </div>
 
         <div class="field">
             <label for="document" class="label"><strong>Document:</strong></label>
             <input
                 class="input"
-                type="text"
+                type="file"
                 id="document"
                 name="document">
         </div>
-
-        {{--        <tr>--}}
-        {{--            <td>--}}
-        {{--                <label><strong>Upload File:</strong></label>--}}
-        {{--            </td>--}}
-        {{--            <td>--}}
-        {{--                <input type="file" name="file" class="form-control">--}}
-        {{--            </td>--}}
-        {{--        </tr>--}}
 
         <input
             type="submit"

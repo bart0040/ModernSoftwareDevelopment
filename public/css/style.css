@@ -1,8 +1,9 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
 
-.wrapper{
+.wrapper {
     margin-left: 5%;
     margin-right: 5%;
+}
 body {
     font-family: "PT Sans", sans-serif !important;
     -webkit-font-smoothing: antialiased;
@@ -128,7 +129,7 @@ input {
     background-color: indianred;
 }
 #button3{
-    background-color: lightyellow;
+    background-color: blue;
 }
 
 #outer{
