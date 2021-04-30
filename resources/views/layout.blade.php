@@ -14,30 +14,8 @@
 
     <ul class="ul">
         <li class="name">
-            <a href="/https://hz.nl/" title="HZ University of Applied Sciences (nl)">
+            <a href="https://hz.nl/" title="HZ University of Applied Sciences (nl)">
                 <img class="hz-logo" src="{{asset('/img/hz-logo.svg')}}" alt="HZ University of Applied Sciences (nl)">
-            </a>
-        </li>
-        <li class="ENHZ">
-            <a class="dark-blue-background" href="https://hz.nl/en/">
-                <i id="globe" class="fas fa-globe"></i>
-                EN
-            </a>
-        </li>
-
-        <li class="MYHZ">
-            <a class="blue-background" href="https://portal.hz.nl">
-                <i id="user" class="fas fa-user">
-
-                </i>
-                <span>MyHZ</span>
-            </a>
-        </li>
-
-        <li class="search">
-            <a class="light-blue-background" href="#" data-search>
-                <i id="search" class="fas fa-search"></i>
-                Zoek
             </a>
         </li>
     </ul>
@@ -49,7 +27,7 @@
 <!--Menu-->
 
 <ul>
-    <div class="wrapper">
+    <div class="wrapper" id="navBar">
         <li class="home">
             <a href="/" id="kaas" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>
         </li>
