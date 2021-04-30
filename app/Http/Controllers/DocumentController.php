@@ -46,9 +46,6 @@ class DocumentController extends Controller
     {
         //Code for saving a file
         //$request
-
-
-
         $document = Document::create($this->validateDocument($request));
 
         $d_id = $document->id;

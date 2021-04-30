@@ -9,9 +9,7 @@ class Document extends Model
 {
     use HasFactory;
 
-    protected $guarded = [
-
-    ];
+    protected $guarded = [];
 
     public function filters(){
         return $this->belongsToMany(Filter::class, 'junctions', 'document_id', 'filter_id');
