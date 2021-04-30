@@ -124,3 +124,49 @@ input {
     margin-left: 5%;
 }
 
+.hz-logo {
+    padding: 1.25rem;
+    height: 5.625rem;
+    display: block;
+    vertical-align: middle;
+    border: none;
+}
+
+.ul > li:last-child {
+    float: right;
+}
+
+.ENHZ {
+    float: right;
+}
+
+.MYHZ {
+    float: right;
+}
+
+.home{
+    padding: 20px;
+    background-color: #009edc;
+    color: white;
+}
+
+.documents{
+    padding: 20px;
+    background-color: #007acc;
+    color: white;
+}
+
+.filter{
+    padding: 20px;
+    background-color: #005095;
+    color: white;
+}
+
+.text{
+    margin: auto;
+}
+
+#navBar{
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
