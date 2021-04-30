@@ -52,9 +52,9 @@
 
 <ul>
     <div class="wrapper">
-        <li class="home">
-            <a href="/" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>
-        </li>
+{{--        <li class="home">--}}
+{{--            <a href="/" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>--}}
+{{--        </li>--}}
         <li class="documents">
             <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
         </li>
