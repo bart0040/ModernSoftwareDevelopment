@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Document;
+use App\Models\Filter;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -22,7 +23,19 @@ class DocumentController extends Controller
     public function index()
     {
         $documents = Document::all();
-        return view('documents.index', compact('documents'));
+        $filters = Filter::all();
+        return view('documents.index', compact('documents', 'filters'));
+    }
+
+    public function showFiltered(Request $request)
+    {
+        $filterIds = $request->filters;
+        $filters = Filter::all();
+        $z = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds){
+            $q->whereIn('filter_id', $filterIds);
+        }, '=', count($filterIds))->get();
+
+        return view('documents.filtered', compact('z', 'filters', 'filterIds'));
     }
 
     /**

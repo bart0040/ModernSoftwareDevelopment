@@ -42,16 +42,7 @@ class FilterController extends Controller
         //
     }
 
-    public function showFiltered(Request $request)
-    {
-        $filterIds = $request->filters;
-        $filters = Filter::all();
-        $z = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds){
-            $q->whereIn('filter_id', $filterIds);
-        }, '=', count($filterIds))->get();
-
-        return view('filter.show', compact('z', 'filters'));
-    }
+    
 
     /**
      * Display the specified resource.
