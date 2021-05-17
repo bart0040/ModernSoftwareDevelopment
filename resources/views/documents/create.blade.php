@@ -29,7 +29,7 @@
         </div>
 
         <div class="field">
-            <label for="project_name" class="checkbox"><strong>Filter A:</strong></label>
+            <label for="project_name" class="checkbox"><strong>Nederlands:</strong></label>
             <div class="control">
             <input
                 type="checkbox"
@@ -42,7 +42,7 @@
         <br>
 
         <div class="field">
-            <label for="project_name" class="checkbox"><strong>Filter B:</strong></label>
+            <label for="project_name" class="checkbox"><strong>Engels:</strong></label>
             <div class="control">
             <input
                 type="checkbox"
@@ -55,7 +55,7 @@
         <br>
 
         <div class="field">
-            <label for="project_name" class="checkbox"><strong>Filter C:</strong></label>
+            <label for="project_name" class="checkbox"><strong>Overige Taal:</strong></label>
             <div class="control">
             <input
                 type="checkbox"
@@ -68,13 +68,52 @@
         <br>
 
         <div class="field">
-            <label for="project_name" class="checkbox"><strong>Filter D:</strong></label>
+            <label for="project_name" class="checkbox"><strong>Word bestand:</strong></label>
             <div class="control">
             <input
                 type="checkbox"
                 id="filter_id"
                 name="filter_ids[]"
                 value="4">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="field">
+            <label for="project_name" class="checkbox"><strong>Powerpoint bestand:</strong></label>
+            <div class="control">
+            <input
+                type="checkbox"
+                id="filter_id"
+                name="filter_ids[]"
+                value="5">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="field">
+            <label for="project_name" class="checkbox"><strong>Pdf bestand:</strong></label>
+            <div class="control">
+            <input
+                type="checkbox"
+                id="filter_id"
+                name="filter_ids[]"
+                value="6">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="field">
+            <label for="project_name" class="checkbox"><strong>Overig bestand:</strong></label>
+            <div class="control">
+            <input
+                type="checkbox"
+                id="filter_id"
+                name="filter_ids[]"
+                value="7">
             </div>
         </div>
 

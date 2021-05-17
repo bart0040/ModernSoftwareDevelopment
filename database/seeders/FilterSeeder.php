@@ -15,15 +15,24 @@ class FilterSeeder extends Seeder
     {
         \DB::table('filters')->insert([
             [
-                'filterName' => 'Filter A'
+                'filterName' => 'Nederlands'
             ],[
-                'filterName' => 'Filter B'
+                'filterName' => 'Engels'
             ],
             [
-                'filterName' => 'Filter C'
+                'filterName' => 'Overige Taal'
             ],
             [
-                'filterName' => 'Filter D'
+                'filterName' => 'Word bestand'
+            ],
+            [
+                'filterName' => 'Powerpoint bestand'
+            ],
+            [
+                'filterName' => 'Pdf bestand'
+            ],
+            [
+                'filterName' => 'Overig bestand'
             ]]);
     }
 }

@@ -21,5 +21,5 @@ Route::get('/', function () {
 });
 Route::resource('/documents', DocumentController::class);
 Route::resource('/filter', Filtercontroller::class, ['except' => ['create', 'show']]);
-Route::post('/showFiltered', [FilterController::class, 'showFiltered']);
+Route::post('/showFiltered', [DocumentController::class, 'showFiltered']);
 

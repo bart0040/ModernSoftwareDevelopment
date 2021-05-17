@@ -4,22 +4,17 @@
     <br>
     <form method="POST" action="/showFiltered">
         @csrf
-
-    @foreach($filters as $filter)
-    <input
-        class="form-control"
-        id="name" name="filters[]"
-        value="{{ $filter->id }}"
-        type="checkbox">
-
-    <label>{{ $filter->filterName }}</label>
-    @endforeach
-
-    <input
-        type="submit"
-        value="submit">
+        @foreach($filters as $filter)
+            <input class="form-control" id="name" name="filters[]" value="{{ $filter->id }}" type="checkbox"
+            @foreach($filterIds as $id)
+            @if($id == $filter->id)
+            checked
+            @endif
+            @endforeach>
+            <label>{{ $filter->filterName }}</label>
+        @endforeach
+        <input type="submit" value="submit">
     </form>
-
     <table class="table" id="table">
         <thead>
         <tr>
@@ -34,7 +29,7 @@
         </tr>
         </thead>
         <tbody>
-        @foreach($documents as $document)
+        @foreach($z as $document)
             <tr>
                 <td>{{ $document->project_name }}</td>
                 <td>{{ $document->document_name }}</td>
@@ -48,11 +43,8 @@
         @endforeach
         </tbody>
     </table>
-    <br>
-
     <a href="/documents/create">
         <button class="button" id="addDocBut"> Add new document </button>
         </a>
-
     
 @endsection
