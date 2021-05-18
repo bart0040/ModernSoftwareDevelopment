@@ -1,7 +1,11 @@
 @extends('layout')
 
 @section('content')
-    <p>filters</p>
+
+    <p>Filters</p>
+
+    <br>
+
     <form method="POST" action="/showFiltered">
         @csrf
         @foreach($filters as $filter)
@@ -10,7 +14,12 @@
         @endforeach
         <input type="submit" value="submit">
     </form>
-    <h1>show page</h1>
+
+    <br>
+
+    <h1>Show Page</h1>
+
+    <br>
 
     @foreach($z as $document)
         <p>{{ $document->project_name }}</p>
