@@ -5,21 +5,46 @@
     margin-right: 5%;
 }
 
-.header{
-    padding: 20px;
-    text-align: center;
-    background: #383c4a;
-    color: #5294e2;
-    font-size: 25px;
-    font-family: sans-serif;
+body {
+    font-family: "PT Sans", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
 }
+
+nav.top-bar {
+    height: 5.625rem;
+    line-height: 5.625rem;
+    text-align: center;
+    background: #FFFFFF;
+    font-size: 25px;
+    font-family: "PT Sans", sans-serif !important;
+
+}
+
+
+.dark-blue-background {
+    background-color: #005095;
+    color: white;
+    float: right;
+
+}
+
+.blue-background {
+    background-color: #007acc;
+    color: white;
+}
+
+.light-blue-background {
+    background-color: #009edc;
+    color: white;
+}
+
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #7c818c;
+    /*background-color: #7c818c;*/
 }
 
 li {
@@ -31,25 +56,20 @@ li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: #7c818c;
-    transform:scale(1.1);
-    animation-name: background-color;
-    animation-duration: 1000ms;
-    cursor: pointer;
+
+.text {
+    background-color: white;
+    width: 1000px;
+
 }
 
-.text{
-    text-align: center;
-    background-color:white;
-}
-
-.body{
+body {
     background-color: #f6f6f6;
+
 }
 
 p {
@@ -59,9 +79,7 @@ p {
 #table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 90%;
-    margin-left: 5%;
-    /*padding: 10%;*/
+    width: 95%;
 }
 
 #table td, #table th {
@@ -69,9 +87,13 @@ p {
     padding: 8px;
 }
 
-#table tr:nth-child(even){background-color: #f2f2f2;}
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-#table tr:hover {background-color: #ddd;}
+#table tr:hover {
+    background-color: #ddd;
+}
 
 #table th {
     padding-top: 12px;
@@ -101,27 +123,29 @@ input {
 #button1 {
     background-color: lightgreen;
 }
-#button2{
+
+#button2 {
     background-color: indianred;
 }
-#button3{
-    background-color: lightyellow;
+
+#button3 {
+    background-color: blue;
 }
 
-#outer{
+#outer {
     width: 100%;
     text-align: center;
 }
 
-#editH1{
+#editH1 {
     margin-left: 5%;
     font-size: 30px;
     font-weight: bold;
 }
 
-#addDocBut{
+#addDocBut {
     background-color: cornflowerblue;
-    margin-left: 5%;
+    margin-left: 21%;
 }
 
 .hz-logo {
@@ -144,29 +168,43 @@ input {
     float: right;
 }
 
-.home{
+.home {
     padding: 20px;
     background-color: #009edc;
     color: white;
 }
 
-.documents{
+.documents {
     padding: 20px;
     background-color: #007acc;
     color: white;
 }
 
-.filter{
+.filter {
     padding: 20px;
     background-color: #005095;
     color: white;
 }
 
-.text{
+.text {
     margin: auto;
 }
 
-#navBar{
+#navBar {
     margin-left: 5%;
     margin-bottom: 5%;
 }
+
+#filterOptions{
+    border: black solid 1px;
+    width: 13%;
+    margin-right: 5%;
+    float: left;
+}
+
+#tableDiv{
+    float: left;
+    width: 80%;
+}
+
+
