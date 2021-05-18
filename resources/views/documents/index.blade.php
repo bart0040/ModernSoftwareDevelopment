@@ -7,6 +7,7 @@
         <div id="parentDiv">
 
             <div id="filterOptions">
+                <p> taal </p>
                 @foreach($filters as $filter)
                     <input
                         class="form-control"
@@ -15,6 +16,10 @@
                         type="checkbox">
                     <label>{{ $filter->filterName }}</label>
                     <br>
+                    @if($filter->id == 3)
+                    <br>
+                    <p> heading </p>
+                    @endif
                 @endforeach
 
                 <input

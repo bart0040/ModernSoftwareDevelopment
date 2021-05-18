@@ -12,6 +12,9 @@
             @endif
             @endforeach>
             <label>{{ $filter->filterName }}</label>
+            @if($filter->id == 3)
+            <p> heading </p>
+            @endif
         @endforeach
         <input type="submit" value="submit">
     </form>
