@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '0527346b60a230ed69975b9c586c6089ab148d6f',
+    'reference' => '777780b97f548dc261ccfac474c0cdc438c943a0',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -429,6 +429,15 @@
         0 => '*',
       ),
     ),
+    'laravel-frontend-presets/tailwindcss' => 
+    array (
+      'pretty_version' => '4.3.1',
+      'version' => '4.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4f821e72ff7a46057d815d450ce8f7c64f7abe7a',
+    ),
     'laravel/framework' => 
     array (
       'pretty_version' => 'v8.34.0',
@@ -445,7 +454,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '0527346b60a230ed69975b9c586c6089ab148d6f',
+      'reference' => '777780b97f548dc261ccfac474c0cdc438c943a0',
     ),
     'laravel/sail' => 
     array (
@@ -464,6 +473,15 @@
       array (
       ),
       'reference' => '04ad32c1a3328081097a181875733fa51f402083',
+    ),
+    'laravel/ui' => 
+    array (
+      'pretty_version' => 'v3.2.1',
+      'version' => '3.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e2478cd0342a92ec1c8c77422553bda8ee004fd0',
     ),
     'league/commonmark' => 
     array (

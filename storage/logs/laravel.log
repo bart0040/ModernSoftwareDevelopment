@@ -8611,7 +8611,8 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #61 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #62 {main}
 "} 
-[2021-05-18 11:43:02] local.ERROR: Undefined variable $filter (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\filtered.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/filtered.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-539958591 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1195</a><samp data-depth=1 class=sf-dump-expanded>
+[2021-05-18 11:43:02] local.ERROR: Undefined variable $filter (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\filtered.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/filtered.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-539958591 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1195</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-539958591\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
@@ -8869,9 +8870,12 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
   <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str>2</span>\"
 </samp>]
 </pre><script>Sfdump(\"sf-dump-101762975\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable $filter (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views\\documents\\filtered.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/filtered.blade.php:16)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable $filter (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views\\documents\\filtered.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/filtered.blade.php:16)
 [stacktrace]
-#0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/filtered.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 16)
+#0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/filtered.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 16)
 #1 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\xampp\\\\htdocs...')
 #2 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)

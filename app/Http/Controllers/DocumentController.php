@@ -15,6 +15,9 @@ use Illuminate\Routing\Redirector;
 
 class DocumentController extends Controller
 {
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -31,7 +34,7 @@ class DocumentController extends Controller
     {
         $filterIds = $request->filters;
         $filters = Filter::all();
-        $z = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds){
+        $z = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds) {
             $q->whereIn('filter_id', $filterIds);
         }, '=', count($filterIds))->get();
 
@@ -46,7 +49,11 @@ class DocumentController extends Controller
      */
     public function create(Document $document)
     {
-        return view('documents.create',['document'=> $document]);
+        $this->middleware('auth');
+
+        return view('documents.create', ['document' => $document]);
+
+
     }
 
     /**
@@ -63,9 +70,9 @@ class DocumentController extends Controller
 
         $d_id = $document->id;
 
-        foreach($request->filter_ids as $f_id){
+        foreach ($request->filter_ids as $f_id) {
             \DB::table('junctions')->insert(array('document_id' => $d_id, 'filter_id' => $f_id));
-         }
+        }
 
         return redirect(route('documents.index'))->with('status', 'Document created successful');
 
@@ -90,7 +97,10 @@ class DocumentController extends Controller
      */
     public function edit(Document $document)
     {
+
         return view('documents.edit', ['document' => $document]);
+
+
     }
 
     /**
