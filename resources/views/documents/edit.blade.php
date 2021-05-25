@@ -21,6 +21,19 @@
             @enderror
         </div>
 
+        @foreach($filters as $filter)
+        <div class="field">
+            <input class="form-control" id="name" name="filters[]" value="{{ $filter->id }}" type="checkbox"
+            @foreach($filterIds as $id)
+            @if($id == $filter->id)
+            checked
+            @endif
+            @endforeach>
+            <label>{{ $filter->filterName }}</label>
+        </div>
+        <br>
+        @endforeach
+
         <div class="field">
             <label class="label">Document name: </label>
             <div class="control">
