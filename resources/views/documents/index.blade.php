@@ -63,9 +63,9 @@
 
         </div>
     </form>
-
+@auth
     <a href="/documents/create">
         <button class="button" id="addDocBut"> Add new document</button>
     </a>
-
+@endauth
 @endsection

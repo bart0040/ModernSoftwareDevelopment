@@ -37,6 +37,19 @@
         <li class="filter">
             <a href="/filter" {{ Request::path() === 'filter' ? "is-active" : "" }}"> Filter </a>
         </li>
+        @guest
+        <li class="login">
+            <a href="/login" {{ Request::path() === 'login' ? "is-active" : "" }}"> Log in </a>
+        </li>
+            <li class="register">
+                <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
+            </li>
+            @endguest
+        @auth
+            <li class="logout">
+                <a href="{{ url('/logout') }}"> Log out </a>
+            </li>
+        @endauth
     </div>
 </ul>
 
