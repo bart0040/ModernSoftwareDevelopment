@@ -13,14 +13,11 @@
 <nav class="top-bar" data-topbar role="navigation" data-options="is_hover: true">
 
     <ul class="ul">
-
         <li class="name">
             <a href="https://hz.nl/" title="HZ University of Applied Sciences (nl)">
                 <img class="hz-logo" src="{{asset('/img/hz-logo.svg')}}" alt="HZ University of Applied Sciences (nl)">
             </a>
         </li>
-
-
     </ul>
 </nav>
 
@@ -31,28 +28,15 @@
 
 <ul>
     <div class="wrapper" id="navBar">
-        {{--        <li class="home">--}}
-        {{--            <a href="/" id="kaas" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>--}}
-        {{--        </li>--}}
+{{--        <li class="home">--}}
+{{--            <a href="/" id="kaas" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>--}}
+{{--        </li>--}}
         <li class="documents">
             <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
         </li>
         <li class="filter">
             <a href="/filter" {{ Request::path() === 'filter' ? "is-active" : "" }}"> Filter </a>
         </li>
-        @guest
-        <li class="login">
-            <a href="/login" {{ Request::path() === 'login' ? "is-active" : "" }}"> Log in </a>
-        </li>
-            <li class="register">
-                <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
-            </li>
-            @endguest
-        @auth
-            <li class="logout">
-                <a href="{{ url('/logout') }}"> Log out </a>
-            </li>
-        @endauth
     </div>
 </ul>
 
