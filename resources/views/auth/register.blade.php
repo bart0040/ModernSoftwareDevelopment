@@ -6,7 +6,7 @@
         <div class="w-full">
             <section class="flex flex-col break-words bg-white sm:border-1 sm:rounded-md sm:shadow-sm sm:shadow-lg">
 
-                <header style="text-align: center" class="font-semibold bg-gray-200 text-gray-700 py-5 px-6 sm:py-6 sm:px-8 sm:rounded-t-md">
+                <header class="font-semibold bg-gray-200 text-gray-700 py-5 px-6 sm:py-6 sm:px-8 sm:rounded-t-md">
                     {{ __('Register') }}
                 </header>
 
@@ -14,7 +14,7 @@
                     action="{{ route('register') }}">
                     @csrf
 
-                    <div style="position:absolute; left: 44%;" class="flex flex-wrap">
+                    <div class="flex flex-wrap">
                         <label for="name" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
                             {{ __('Name') }}:
                         </label>
@@ -29,7 +29,7 @@
                         @enderror
                     </div>
 
-                    <div style="position:absolute; left: 44%; margin-top: 50px" class="flex flex-wrap">
+                    <div class="flex flex-wrap">
                         <label for="email" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
                             {{ __('E-Mail Address') }}:
                         </label>
@@ -45,7 +45,7 @@
                         @enderror
                     </div>
 
-                    <div style="position:absolute; left: 44%; margin-top: 100px" class="flex flex-wrap">
+                    <div class="flex flex-wrap">
                         <label for="password" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
                             {{ __('Password') }}:
                         </label>
@@ -58,11 +58,10 @@
                         <p class="text-red-500 text-xs italic mt-4">
                             {{ $message }}
                         </p>
-
                         @enderror
                     </div>
 
-                    <div  style="position:absolute; left: 44%; margin-top: 140px" class="flex flex-wrap">
+                    <div class="flex flex-wrap">
                         <label for="password-confirm" class="block text-gray-700 text-sm font-bold mb-2 sm:mb-4">
                             {{ __('Confirm Password') }}:
                         </label>
@@ -71,7 +70,7 @@
                             name="password_confirmation" required autocomplete="new-password">
                     </div>
 
-                    <div style="position:absolute; left: 48%; margin-top: 190px" class="flex flex-wrap">
+                    <div class="flex flex-wrap">
                         <button type="submit"
                             class="w-full select-none font-bold whitespace-no-wrap p-3 rounded-lg text-base leading-normal no-underline text-gray-100 bg-blue-500 hover:bg-blue-700 sm:py-4">
                             {{ __('Register') }}
