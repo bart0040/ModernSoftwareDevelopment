@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+  @auth
     <h1 id="editH1">Edit document {{$document->document_name}}</h1>
     <form method="POST" action="{{ route('documents.update', $document) }}">
         @csrf
@@ -137,6 +138,14 @@
                 Cancel</button>
         </form>
     </div>
+  @endauth
+    @guest
+        <h2 style="text-align: center">You are not authorised to edit this document. Please click the button below to log in.</h2>
+        <form action="/login">
+            <br>
+            <button style="position: relative; left: 49%" type="submit">Log in</button>
+        </form>
+    @endguest
 @endsection
 
 
