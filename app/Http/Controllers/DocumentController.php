@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Document;
 use App\Models\Filter;
+use App\Models\Junction;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -97,10 +98,14 @@ class DocumentController extends Controller
      */
     public function edit(Document $document)
     {
-
-        return view('documents.edit', ['document' => $document]);
-
-
+        $filters = Filter::all();
+        $documentId = $document->id;
+        $f = Document::find($documentId)->filters;
+        $filterIds = [];
+        foreach($f as $filter){
+            array_push($filterIds, $filter->id);
+        }
+        return view('documents.edit', compact('document', 'filterIds', 'filters'));
     }
 
     /**
@@ -112,6 +117,7 @@ class DocumentController extends Controller
      */
     public function update(Request $request, Document $document)
     {
+        $document->filters()->sync($request->filters);
         $document->update($this->validateDocument($request));
         return redirect('/documents');
     }
