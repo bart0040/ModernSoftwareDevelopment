@@ -58,6 +58,8 @@ class DocumentController extends Controller
      */
     public function store(Request $request)
     {
+        $path = $request->file('document')->store('public/documents');
+        $request->merge(['file_path' => $path]);
         //Code for saving a file
         //$request
         $document = Document::create($this->validateDocument($request));
@@ -136,7 +138,7 @@ class DocumentController extends Controller
             'document_name' => 'required',
             'keywords' => 'required',
             'language' => 'required',
-            'document' => 'required',
+            'file_path' => 'required',
         ]);
     }
 }
