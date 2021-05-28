@@ -12706,3 +12706,54 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #40 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #41 {main}
 "} 
+[2021-05-28 10:41:36] local.ERROR: include(C:\Users\31615\Desktop\Blok3\ModernSoftwareDevelopment\vendor\composer/../laravel/framework/src/Illuminate/Pagination/PaginationState.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer/../laravel/framework/src/Illuminate/Pagination/PaginationState.php): Failed to open stream: No such file or directory at C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php:476)
+[stacktrace]
+#0 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(476): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\31615\\\\...', 476)
+#1 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(476): include()
+#2 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(344): Composer\\Autoload\\includeFile('C:\\\\Users\\\\31615\\\\...')
+#3 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Pagination\\PaginationServiceProvider.php(32): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Pagi...')
+#4 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(672): Illuminate\\Pagination\\PaginationServiceProvider->register()
+#5 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Pagination\\PaginationServiceProvider))
+#6 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(649): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#7 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#8 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#9 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#10 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#11 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#13 {main}
+"} 
+[2021-05-28 10:41:40] local.ERROR: include(C:\Users\31615\Desktop\Blok3\ModernSoftwareDevelopment\vendor\composer/../laravel/framework/src/Illuminate/Pagination/PaginationState.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer/../laravel/framework/src/Illuminate/Pagination/PaginationState.php): Failed to open stream: No such file or directory at C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php:476)
+[stacktrace]
+#0 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(476): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\31615\\\\...', 476)
+#1 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(476): include()
+#2 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(344): Composer\\Autoload\\includeFile('C:\\\\Users\\\\31615\\\\...')
+#3 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Pagination\\PaginationServiceProvider.php(32): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Pagi...')
+#4 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(672): Illuminate\\Pagination\\PaginationServiceProvider->register()
+#5 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Pagination\\PaginationServiceProvider))
+#6 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(649): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#7 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#8 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#9 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#10 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#11 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#13 {main}
+"} 
+[2021-05-28 10:42:19] local.ERROR: include(C:\Users\31615\Desktop\Blok3\ModernSoftwareDevelopment\vendor\composer/../laravel/framework/src/Illuminate/Pagination/PaginationState.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer/../laravel/framework/src/Illuminate/Pagination/PaginationState.php): Failed to open stream: No such file or directory at C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php:476)
+[stacktrace]
+#0 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(476): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\31615\\\\...', 476)
+#1 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(476): include()
+#2 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(344): Composer\\Autoload\\includeFile('C:\\\\Users\\\\31615\\\\...')
+#3 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Pagination\\PaginationServiceProvider.php(32): Composer\\Autoload\\ClassLoader->loadClass('Illuminate\\\\Pagi...')
+#4 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(672): Illuminate\\Pagination\\PaginationServiceProvider->register()
+#5 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register(Object(Illuminate\\Pagination\\PaginationServiceProvider))
+#6 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(649): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#7 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#8 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#9 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#10 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#11 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#13 {main}
+"} 
