@@ -24,11 +24,11 @@
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
     ),
   ),
-  'laravel-frontend-presets/tailwindcss' => 
+  'laravel/breeze' => 
   array (
     'providers' => 
     array (
-      0 => 'LaravelFrontendPresets\\TailwindCssPreset\\TailwindCssPresetServiceProvider',
+      0 => 'Laravel\\Breeze\\BreezeServiceProvider',
     ),
   ),
   'laravel/sail' => 
@@ -43,13 +43,6 @@
     'providers' => 
     array (
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    ),
-  ),
-  'laravel/ui' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Ui\\UiServiceProvider',
     ),
   ),
   'nesbot/carbon' => 

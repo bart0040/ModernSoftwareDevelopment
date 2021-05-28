@@ -1,10 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\FilterController;
 use App\Http\Controllers\UploadController;
-use App\Models\Document;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,24 +19,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
 Route::resource('/documents', DocumentController::class);
-
 Route::resource('/filter', Filtercontroller::class, ['except' => ['create', 'show']]);
-
 Route::post('/showFiltered', [DocumentController::class, 'showFiltered']);
 
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Auth::routes();
-
-Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])
-    ->name('home');
-
-Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
-
-Auth::routes();
-
-Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+require __DIR__.'/auth.php';
