@@ -16,9 +16,6 @@ use Illuminate\Routing\Redirector;
 
 class DocumentController extends Controller
 {
-
-
-
     /**
      * Display a listing of the resource.
      *
@@ -35,7 +32,7 @@ class DocumentController extends Controller
     {
         $filterIds = $request->filters;
         $filters = Filter::all();
-        $z = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds) {
+        $z = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds){
             $q->whereIn('filter_id', $filterIds);
         }, '=', count($filterIds))->get();
 
@@ -50,11 +47,7 @@ class DocumentController extends Controller
      */
     public function create(Document $document)
     {
-        $this->middleware('auth');
-
-        return view('documents.create', ['document' => $document]);
-
-
+        return view('documents.create',['document'=> $document]);
     }
 
     /**
@@ -65,15 +58,17 @@ class DocumentController extends Controller
      */
     public function store(Request $request)
     {
+        $path = $request->file('document')->store('public/documents');
+        $request->merge(['file_path' => $path]);
         //Code for saving a file
         //$request
         $document = Document::create($this->validateDocument($request));
 
         $d_id = $document->id;
 
-        foreach ($request->filter_ids as $f_id) {
+        foreach($request->filter_ids as $f_id){
             \DB::table('junctions')->insert(array('document_id' => $d_id, 'filter_id' => $f_id));
-        }
+         }
 
         return redirect(route('documents.index'))->with('status', 'Document created successful');
 
@@ -143,7 +138,7 @@ class DocumentController extends Controller
             'document_name' => 'required',
             'keywords' => 'required',
             'language' => 'required',
-            'document' => 'required',
+            'file_path' => 'required',
         ]);
     }
 }

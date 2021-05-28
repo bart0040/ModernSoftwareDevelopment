@@ -186,6 +186,18 @@ input {
     color: white;
 }
 
+.login {
+    padding: 20px;
+    background-color: #005095;
+    color: white;
+}
+
+.register {
+    padding: 20px;
+    background-color: #005095;
+    color: white;
+}
+
 .text {
     margin: auto;
 }
@@ -206,6 +218,5 @@ input {
     float: left;
     width: 80%;
 }
-
 
 

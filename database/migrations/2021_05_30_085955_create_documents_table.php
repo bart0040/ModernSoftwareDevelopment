@@ -22,7 +22,7 @@ class CreateDocumentsTable extends Migration
             $table->string('language');
 //            $table->string('file_type')->nullable();
             //#TODO make it a longText into a document type.
-            $table->longText('document');
+            $table->string('file_path');
             $table->timestamps();
         });
     }
