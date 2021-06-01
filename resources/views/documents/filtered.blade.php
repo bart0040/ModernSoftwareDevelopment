@@ -7,7 +7,7 @@
         <div id="parentDiv">
 
             <div id="filterOptions">
-                <p> Taal </p>
+                <p id="header"> Taal </p>
                 @foreach($filters as $filter)
                     <input class="form-control"
                            id="name"
@@ -24,7 +24,7 @@
                     <br>
                     @if($filter->id == 3)
                         <br>
-                        <p> Bestandstype </p>
+                        <p id="header"> Bestandstype </p>
                     @endif
                 @endforeach
                 <input

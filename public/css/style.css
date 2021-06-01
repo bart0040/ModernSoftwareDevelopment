@@ -242,5 +242,10 @@ input {
 #navBar a{
     color: whitesmoke;
 }
+.header{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 
 
