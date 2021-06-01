@@ -213,10 +213,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
-<<<<<<< HEAD
-      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
-=======
->>>>>>> 50908fa28a2ca7febff93486fe13e1118d7c339a
       <path value="$PROJECT_DIR$/vendor/laravel/breeze" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/laravel-frontend-presets/tailwindcss" />
@@ -231,11 +227,8 @@
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
       <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
-<<<<<<< HEAD
-=======
       <path value="$PROJECT_DIR$/vendor/tightenco/ziggy" />
       <path value="$PROJECT_DIR$/vendor/inertiajs/inertia-laravel" />
->>>>>>> 50908fa28a2ca7febff93486fe13e1118d7c339a
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3">

@@ -28,22 +28,4 @@ Route::resource('/documents', DocumentController::class);
 Route::resource('/filter', Filtercontroller::class, ['except' => ['create', 'show']]);
 Route::post('/showFiltered', [DocumentController::class, 'showFiltered']);
 
-<<<<<<< HEAD
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Auth::routes();
-
-Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])
-    ->name('home');
-
-Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
-
-Auth::routes();
-
-Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-=======
 require __DIR__.'/auth.php';
->>>>>>> 50908fa28a2ca7febff93486fe13e1118d7c339a
