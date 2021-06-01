@@ -5,20 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="545dbe48-f87b-4f26-b58f-dc2838e89462" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/dow.TIUBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/dow.TIUBAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/foo.xowBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/foo.xowBAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/myproject.7cMhKA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/myproject.7cMhKA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/mytodo.8r_fwA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/mytodo.8r_fwA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/oefen_tentamen.0mH1hw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/oefen_tentamen.0mH1hw.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/test2.4E2SBg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/test2.4E2SBg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/testdatabase.DaRikQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/testdatabase.DaRikQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/top2000.k4P-uw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/top2000.k4P-uw.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KeywordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KeywordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/documents/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,6 +293,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />

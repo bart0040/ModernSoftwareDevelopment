@@ -6,8 +6,8 @@
         @csrf
         <div id="parentDiv">
 
-            <div id="filterOptions">
-                <p> taal </p>
+            @if()<div id="filterOptions">
+                <p> Taal </p>
                 @foreach($filters as $filter)
                     <input
                         class="form-control"
@@ -17,14 +17,12 @@
                     <label>{{ $filter->filterName }}</label>
                     <br>
                     @if($filter->id == 3)
-                    <br>
-                    <p> heading </p>
+                        <br>
+                        <p> Heading </p>
                     @endif
                 @endforeach
 
-                <input
-                    type="submit"
-                    value="submit">
+
             </div>
 
 

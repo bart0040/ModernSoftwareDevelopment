@@ -49,6 +49,7 @@
             <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
         </li>
             @endif
+        <li class="searchBar"><input></li>
     </div>
 </ul>
 
