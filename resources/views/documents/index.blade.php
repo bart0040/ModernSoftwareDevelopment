@@ -7,7 +7,7 @@
         <div id="parentDiv">
 
             <div id="filterOptions">
-                <p> taal </p>
+                <p> Taal </p>
                 @foreach($filters as $filter)
                     <input
                         class="form-control"
@@ -17,8 +17,8 @@
                     <label>{{ $filter->filterName }}</label>
                     <br>
                     @if($filter->id == 3)
-                    <br>
-                    <p> heading </p>
+                        <br>
+                        <p> Bestandstype </p>
                     @endif
                 @endforeach
 
@@ -48,7 +48,7 @@
                             <td>{{ $document->project_name }}</td>
                             <td>{{ $document->document_name }}</td>
                             <td>{{ $document->author }}</td>
-                            <td><a href="{{Storage::url($document->file_path)}}">download</a></td>
+                            <td><a href="{{Storage::url($document->file_path)}}">Download File</a></td>
                             <td>{{ $document->keywords }}</td>
                             <td>{{ $document->language }}</td>
                             <td>{{ $document->updated_at }}</td>
@@ -59,8 +59,6 @@
                 </table>
             </div>
             <br>
-
-
         </div>
     </form>
 
