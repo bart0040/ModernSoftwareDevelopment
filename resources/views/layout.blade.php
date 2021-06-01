@@ -38,7 +38,7 @@
             <a href="/filter" {{ Request::path() === 'filter' ? "is-active" : "" }}"> Filter </a>
         </li>
         @if(Auth::check())
-            <li>
+            <li class="documents">
                 <a href="/dashboard" {{ Request::path() === 'dashboard' ? "is-active" : "" }}">Dashboard</a>
             </li>
         @else

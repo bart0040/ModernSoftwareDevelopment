@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layout')
 
 @section('content')
 <main class="sm:container sm:mx-auto sm:mt-10">
@@ -18,7 +18,7 @@
 
             <div class="w-full p-6">
                 <p class="text-gray-700">
-                    You are logged in!
+                    You are logged in, {{Auth::user()->name}}.
                 </p>
             </div>
         </section>
