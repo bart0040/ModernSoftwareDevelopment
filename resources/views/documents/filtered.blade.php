@@ -29,7 +29,8 @@
                 @endforeach
                 <input
                     type="submit"
-                    value="Submit">
+                    value="Submit"
+                    class="submitFilter">
             </div>
 
             <div id="tableDiv">

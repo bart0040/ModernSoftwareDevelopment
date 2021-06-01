@@ -247,5 +247,13 @@ input {
     margin-bottom: 5px;
 }
 
+.submitFilter{
+    margin: 5px;
+}
+
+.submitFilter:hover{
+    opacity: 50%;
+}
+
 
 

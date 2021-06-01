@@ -24,7 +24,8 @@
 
                 <input
                     type="submit"
-                    value="Submit">
+                    value="Submit"
+                    class="submitFilter">
             </div>
 
 
