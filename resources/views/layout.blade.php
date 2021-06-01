@@ -29,7 +29,7 @@
 <ul>
     <div class="wrapper" id="navBar">
         <li class="documents">
-            <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
+            <a href="/" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
         </li>
         @if(Auth::check())
             <li class="documents">

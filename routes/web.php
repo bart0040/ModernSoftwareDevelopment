@@ -16,9 +16,7 @@ use App\Http\Controllers\UploadController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('/', DocumentController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
