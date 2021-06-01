@@ -24,7 +24,7 @@
 
                 <input
                     type="submit"
-                    value="submit">
+                    value="Submit">
             </div>
 
 
