@@ -29,7 +29,7 @@
                 @endforeach
                 <input
                     type="submit"
-                    value="submit">
+                    value="Submit">
             </div>
 
             <div id="tableDiv">
