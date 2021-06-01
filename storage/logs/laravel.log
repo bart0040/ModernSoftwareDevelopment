@@ -8122,7 +8122,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #60 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #61 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #62 {main}
-"} 
+"}
 [2021-05-18 10:14:16] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'healthyregion' (SQL: select * from `filters`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'healthyregion' (SQL: select * from `filters`) at C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:678)
 [stacktrace]
 #0 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(638): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -8244,7 +8244,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #60 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #61 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #62 {main}
-"} 
+"}
 [2021-05-18 10:14:18] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'healthyregion' (SQL: select * from `documents`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'healthyregion' (SQL: select * from `documents`) at C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:678)
 [stacktrace]
 #0 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(638): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -8366,7 +8366,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #60 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #61 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #62 {main}
-"} 
+"}
 [2021-05-18 11:24:53] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'healthy_region' (SQL: select * from `documents`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'healthy_region' (SQL: select * from `documents`) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:678)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(638): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -8488,7 +8488,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #60 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #61 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #62 {main}
-"} 
+"}
 [2021-05-18 11:24:53] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'healthy_region' (SQL: select * from `filters`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'healthy_region' (SQL: select * from `filters`) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:678)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(638): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -8610,8 +8610,9 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #60 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #61 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #62 {main}
-"} 
-[2021-05-18 11:43:02] local.ERROR: Undefined variable $filter (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\filtered.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/filtered.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-539958591 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1195</a><samp data-depth=1 class=sf-dump-expanded>
+"}
+[2021-05-18 11:43:02] local.ERROR: Undefined variable $filter (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\filtered.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/filtered.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-539958591 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1195</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-539958591\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
@@ -8869,9 +8870,12 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
   <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str>2</span>\"
 </samp>]
 </pre><script>Sfdump(\"sf-dump-101762975\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable $filter (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views\\documents\\filtered.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/filtered.blade.php:16)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable $filter (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views\\documents\\filtered.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/filtered.blade.php:16)
 [stacktrace]
-#0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/filtered.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 16)
+#0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/filtered.blade.php(16): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 16)
 #1 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\xampp\\\\htdocs...')
 #2 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
@@ -8978,7 +8982,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #49 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #50 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #51 {main}
-"} 
+"}
 [2021-05-25 12:17:56] local.ERROR: count(): Argument #1 ($value) must be of type Countable|array, int given {"exception":"[object] (TypeError(code: 0): count(): Argument #1 ($value) must be of type Countable|array, int given at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:96)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(96): count(1)
@@ -9025,7 +9029,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #41 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #42 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #43 {main}
-"} 
+"}
 [2021-05-25 12:21:43] local.ERROR: Property [filters] does not exist on this collection instance. {"exception":"[object] (Exception(code: 0): Property [filters] does not exist on this collection instance. at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Collections\\Traits\\EnumeratesValues.php:911)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(93): Illuminate\\Support\\Collection->__get('filters')
@@ -9072,7 +9076,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #41 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #42 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #43 {main}
-"} 
+"}
 [2021-05-25 12:21:45] local.ERROR: Property [filters] does not exist on this collection instance. {"exception":"[object] (Exception(code: 0): Property [filters] does not exist on this collection instance. at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Collections\\Traits\\EnumeratesValues.php:911)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(93): Illuminate\\Support\\Collection->__get('filters')
@@ -9119,7 +9123,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #41 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #42 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #43 {main}
-"} 
+"}
 [2021-05-25 12:24:11] local.ERROR: Class "App\Http\Controllers\Junctions" not found {"exception":"[object] (Error(code: 0): Class \"App\\Http\\Controllers\\Junctions\" not found at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:94)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\DocumentController->edit(Object(App\\Models\\Document))
@@ -9165,7 +9169,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #40 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #41 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #42 {main}
-"} 
+"}
 [2021-05-25 12:28:06] local.ERROR: syntax error, unexpected token "->", expecting ")" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"->\", expecting \")\" at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:94)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(344): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
@@ -9202,7 +9206,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #31 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #32 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #33 {main}
-"} 
+"}
 [2021-05-25 12:29:20] local.ERROR: syntax error, unexpected variable "$test" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected variable \"$test\" at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:95)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(344): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
@@ -9239,7 +9243,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #31 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #32 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #33 {main}
-"} 
+"}
 [2021-05-25 12:30:32] local.ERROR: syntax error, unexpected variable "$test" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected variable \"$test\" at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:95)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(344): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
@@ -9276,7 +9280,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #31 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #32 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #33 {main}
-"} 
+"}
 [2021-05-25 12:30:33] local.ERROR: syntax error, unexpected variable "$test" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected variable \"$test\" at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:95)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(344): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
@@ -9313,7 +9317,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #31 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #32 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #33 {main}
-"} 
+"}
 [2021-05-25 12:30:35] local.ERROR: syntax error, unexpected variable "$test" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected variable \"$test\" at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:95)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(344): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
@@ -9350,7 +9354,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #31 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #32 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #33 {main}
-"} 
+"}
 [2021-05-25 12:30:51] local.ERROR: Class "App\Http\Controllers\Documents" not found {"exception":"[object] (Error(code: 0): Class \"App\\Http\\Controllers\\Documents\" not found at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:95)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\DocumentController->edit(Object(App\\Models\\Document))
@@ -9396,7 +9400,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #40 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #41 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #42 {main}
-"} 
+"}
 [2021-05-25 12:37:53] local.ERROR: compact(): Undefined variable $filterArray {"exception":"[object] (ErrorException(code: 0): compact(): Undefined variable $filterArray at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:101)
 [stacktrace]
 #0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'compact(): Unde...', 'C:\\\\xampp\\\\htdocs...', 101)
@@ -9444,7 +9448,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #42 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #43 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #44 {main}
-"} 
+"}
 [2021-05-25 12:52:19] local.ERROR: Method Illuminate\Database\Eloquent\Collection::sync does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Database\\Eloquent\\Collection::sync does not exist. at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Macroable\\Traits\\Macroable.php:103)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(113): Illuminate\\Support\\Collection->__call('sync', Array)
@@ -9491,7 +9495,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #41 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #42 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #43 {main}
-"} 
+"}
 [2021-05-25 13:00:40] local.ERROR: Property [filter_id] does not exist on this collection instance. {"exception":"[object] (Exception(code: 0): Property [filter_id] does not exist on this collection instance. at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Collections\\Traits\\EnumeratesValues.php:911)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(113): Illuminate\\Support\\Collection->__get('filter_id')
@@ -9538,7 +9542,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #41 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #42 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #43 {main}
-"} 
+"}
 [2021-05-25 13:02:04] local.ERROR: Method Illuminate\Database\Eloquent\Collection::sync does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Database\\Eloquent\\Collection::sync does not exist. at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Macroable\\Traits\\Macroable.php:103)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(113): Illuminate\\Support\\Collection->__call('sync', Array)
@@ -9585,7 +9589,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #41 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #42 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #43 {main}
-"} 
+"}
 [2021-05-25 13:04:32] local.ERROR: count(): Argument #1 ($value) must be of type Countable|array, null given {"exception":"[object] (TypeError(code: 0): count(): Argument #1 ($value) must be of type Countable|array, null given at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:37)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(37): count(NULL)
@@ -9632,7 +9636,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #41 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #42 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #43 {main}
-"} 
+"}
 [2021-05-27 13:17:13] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'healthyregion' (SQL: SHOW FULL TABLES WHERE table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'healthyregion' (SQL: SHOW FULL TABLES WHERE table_type = 'BASE TABLE') at C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
 [stacktrace]
 #0 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('SHOW FULL TABLE...', Array, Object(Closure))
@@ -9712,7 +9716,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #39 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #40 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #41 {main}
-"} 
+"}
 [2021-05-27 13:17:28] local.ERROR: SQLSTATE[HY000]: General error: 1813 Tablespace for table '`healthy_region`.`migrations`' exists. Please DISCARD the tablespace before IMPORT (SQL: create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1813 Tablespace for table '`healthy_region`.`migrations`' exists. Please DISCARD the tablespace before IMPORT (SQL: create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
 [stacktrace]
 #0 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('create table `m...', Array, Object(Closure))
@@ -9814,7 +9818,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #46 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #47 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #48 {main}
-"} 
+"}
 [2021-05-27 13:18:12] local.ERROR: SQLSTATE[HY000]: General error: 1813 Tablespace for table '`healthy_region`.`migrations`' exists. Please DISCARD the tablespace before IMPORT (SQL: create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1813 Tablespace for table '`healthy_region`.`migrations`' exists. Please DISCARD the tablespace before IMPORT (SQL: create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
 [stacktrace]
 #0 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('create table `m...', Array, Object(Closure))
@@ -9916,7 +9920,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #46 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #47 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #48 {main}
-"} 
+"}
 [2021-05-27 13:18:56] local.ERROR: SQLSTATE[HY000]: General error: 1813 Tablespace for table '`healthy_region`.`migrations`' exists. Please DISCARD the tablespace before IMPORT (SQL: create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1813 Tablespace for table '`healthy_region`.`migrations`' exists. Please DISCARD the tablespace before IMPORT (SQL: create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
 [stacktrace]
 #0 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('create table `m...', Array, Object(Closure))
@@ -9996,7 +10000,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #35 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #36 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #37 {main}
-"} 
+"}
 [2021-05-27 13:26:29] local.ERROR: SQLSTATE[HY000]: General error: 1813 Tablespace for table '`healthy_region`.`migrations`' exists. Please DISCARD the tablespace before IMPORT (SQL: create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1813 Tablespace for table '`healthy_region`.`migrations`' exists. Please DISCARD the tablespace before IMPORT (SQL: create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
 [stacktrace]
 #0 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('create table `m...', Array, Object(Closure))
@@ -10098,12 +10102,15 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #46 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #47 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #48 {main}
-"} 
-[2021-05-27 13:43:22] local.ERROR: syntax error, unexpected token "endif", expecting end of file (View: C:\Users\31641\Documents\GitHub\ModernSoftwareDevelopment\resources\views\dashboard.blade.php) {"view":{"view":"C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\esources\\views/dashboard.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-362334836 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1214</a><samp data-depth=1 class=sf-dump-expanded>
+"}
+[2021-05-27 13:43:22] local.ERROR: syntax error, unexpected token "endif", expecting end of file (View: C:\Users\31641\Documents\GitHub\ModernSoftwareDevelopment\resources\views\dashboard.blade.php) {"view":{"view":"C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\
+esources\\views/dashboard.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-362334836 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1214</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-362334836\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected token \"endif\", expecting end of file (View: C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\esources\\views\\dashboard.blade.php) at C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\esources\\views/dashboard.blade.php:18)
+"}},"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected token \"endif\", expecting end of file (View: C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\
+esources\\views\\dashboard.blade.php) at C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\
+esources\\views/dashboard.blade.php:18)
 [stacktrace]
 #0 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #1 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\31641\\\\...', Array)
@@ -10216,7 +10223,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #51 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #52 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #53 {main}
-"} 
+"}
 [2021-05-27 17:43:16] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'healthy_region' (SQL: select * from `documents`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'healthy_region' (SQL: select * from `documents`) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -10342,7 +10349,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #62 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #63 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #64 {main}
-"} 
+"}
 [2021-05-27 18:20:04] local.ERROR: syntax error, unexpected variable "$d_id" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected variable \"$d_id\" at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:67)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(344): Composer\\Autoload\\includeFile('C:\\\\xampp\\\\htdocs...')
@@ -10381,7 +10388,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #33 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #34 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #35 {main}
-"} 
+"}
 [2021-05-27 18:20:18] local.ERROR: Undefined property: Illuminate\Http\UploadedFile::$originalName {"exception":"[object] (ErrorException(code: 0): Undefined property: Illuminate\\Http\\UploadedFile::$originalName at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:61)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(61): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined prope...', 'C:\\\\xampp\\\\htdocs...', 61)
@@ -10430,7 +10437,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #43 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #44 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 {main}
-"} 
+"}
 [2021-05-27 18:20:32] local.ERROR: Undefined property: Illuminate\Http\UploadedFile::$originalName {"exception":"[object] (ErrorException(code: 0): Undefined property: Illuminate\\Http\\UploadedFile::$originalName at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:61)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(61): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined prope...', 'C:\\\\xampp\\\\htdocs...', 61)
@@ -10479,7 +10486,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #43 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #44 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 {main}
-"} 
+"}
 [2021-05-27 18:37:34] local.ERROR: Method Illuminate\Validation\Validator::validateDocuments/Z3kjxgvvQ4FIA42hNRhgLapzu9l3uFzNRJsPLudR.jpg does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Validation\\Validator::validateDocuments/Z3kjxgvvQ4FIA42hNRhgLapzu9l3uFzNRJsPLudR.jpg does not exist. at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php:1433)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php(571): Illuminate\\Validation\\Validator->__call('validateDocumen...', Array)
@@ -10536,7 +10543,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #51 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #52 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #53 {main}
-"} 
+"}
 [2021-05-27 18:39:29] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'document' in 'field list' (SQL: insert into `documents` (`author`, `project_name`, `document_name`, `keywords`, `language`, `document`, `updated_at`, `created_at`) values (dfdfdf, dfdfdf, dsfadsfdasf, adsfadsfdas, Dutch, C:\xampp\tmp\phpAE18.tmp, 2021-05-27 18:39:28, 2021-05-27 18:39:28)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'document' in 'field list' (SQL: insert into `documents` (`author`, `project_name`, `document_name`, `keywords`, `language`, `document`, `updated_at`, `created_at`) values (dfdfdf, dfdfdf, dsfadsfdasf, adsfadsfdas, Dutch, C:\\xampp\\tmp\\phpAE18.tmp, 2021-05-27 18:39:28, 2021-05-27 18:39:28)) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('insert into `do...', Array, Object(Closure))
@@ -10666,8 +10673,9 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #60 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #61 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #62 {main}
-"} 
-[2021-05-27 18:48:08] local.ERROR: Unclosed '(' does not match '}' (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\index.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-905247869 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1216</a><samp data-depth=1 class=sf-dump-expanded>
+"}
+[2021-05-27 18:48:08] local.ERROR: Unclosed '(' does not match '}' (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\index.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-905247869 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1216</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-905247869\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
@@ -10960,7 +10968,9 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
   </samp>]
 </samp>}
 </pre><script>Sfdump(\"sf-dump-191262853\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Unclosed '(' does not match '}' (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views\\documents\\index.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/index.blade.php:51)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Unclosed '(' does not match '}' (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views\\documents\\index.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/index.blade.php:51)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #1 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
@@ -11069,8 +11079,9 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #49 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #50 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #51 {main}
-"} 
-[2021-05-27 18:57:35] local.ERROR: Call to undefined function download() (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\index.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-2092087550 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1216</a><samp data-depth=1 class=sf-dump-expanded>
+"}
+[2021-05-27 18:57:35] local.ERROR: Call to undefined function download() (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\index.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-2092087550 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1216</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-2092087550\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
@@ -11363,7 +11374,9 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
   </samp>]
 </samp>}
 </pre><script>Sfdump(\"sf-dump-243635961\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to undefined function download() (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views\\documents\\index.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/index.blade.php:51)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to undefined function download() (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views\\documents\\index.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/index.blade.php:51)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require()
 #1 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
@@ -11474,7 +11487,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #50 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #51 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #52 {main}
-"} 
+"}
 [2021-05-27 18:58:47] local.ERROR: count(): Argument #1 ($value) must be of type Countable|array, null given {"exception":"[object] (TypeError(code: 0): count(): Argument #1 ($value) must be of type Countable|array, null given at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:37)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(37): count(NULL)
@@ -11523,7 +11536,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #43 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #44 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 {main}
-"} 
+"}
 [2021-05-27 18:59:14] local.ERROR: count(): Argument #1 ($value) must be of type Countable|array, null given {"exception":"[object] (TypeError(code: 0): count(): Argument #1 ($value) must be of type Countable|array, null given at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:37)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(37): count(NULL)
@@ -11572,8 +11585,9 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #43 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #44 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 {main}
-"} 
-[2021-05-27 19:02:03] local.ERROR: Call to undefined function download() (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\index.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-681250302 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1216</a><samp data-depth=1 class=sf-dump-expanded>
+"}
+[2021-05-27 19:02:03] local.ERROR: Call to undefined function download() (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\index.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-681250302 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1216</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-681250302\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
@@ -11866,7 +11880,9 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
   </samp>]
 </samp>}
 </pre><script>Sfdump(\"sf-dump-1489648374\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to undefined function download() (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views\\documents\\index.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/index.blade.php:51)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to undefined function download() (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views\\documents\\index.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/index.blade.php:51)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require()
 #1 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
@@ -11977,8 +11993,9 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #50 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #51 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #52 {main}
-"} 
-[2021-05-27 19:02:27] local.ERROR: syntax error, unexpected identifier "response", expecting ":" (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\index.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-785612678 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1216</a><samp data-depth=1 class=sf-dump-expanded>
+"}
+[2021-05-27 19:02:27] local.ERROR: syntax error, unexpected identifier "response", expecting ":" (View: C:\xampp\htdocs\ModernSoftwareDevelopment\resources\views\documents\index.blade.php) {"view":{"view":"C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/index.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-785612678 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#1216</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-785612678\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
@@ -12271,7 +12288,9 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
   </samp>]
 </samp>}
 </pre><script>Sfdump(\"sf-dump-1824768056\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected identifier \"response\", expecting \":\" (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views\\documents\\index.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\esources\\views/documents/index.blade.php:51)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected identifier \"response\", expecting \":\" (View: C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views\\documents\\index.blade.php) at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\
+esources\\views/documents/index.blade.php:51)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #1 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\xampp\\\\htdocs...', Array)
@@ -12380,7 +12399,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #49 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #50 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #51 {main}
-"} 
+"}
 [2021-05-27 19:04:55] local.ERROR: count(): Argument #1 ($value) must be of type Countable|array, null given {"exception":"[object] (TypeError(code: 0): count(): Argument #1 ($value) must be of type Countable|array, null given at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:37)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(37): count(NULL)
@@ -12429,7 +12448,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #43 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #44 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 {main}
-"} 
+"}
 [2021-05-27 19:06:50] local.ERROR: count(): Argument #1 ($value) must be of type Countable|array, null given {"exception":"[object] (TypeError(code: 0): count(): Argument #1 ($value) must be of type Countable|array, null given at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:37)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(37): count(NULL)
@@ -12478,7 +12497,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #43 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #44 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 {main}
-"} 
+"}
 [2021-05-27 19:06:55] local.ERROR: count(): Argument #1 ($value) must be of type Countable|array, null given {"exception":"[object] (TypeError(code: 0): count(): Argument #1 ($value) must be of type Countable|array, null given at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:37)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(37): count(NULL)
@@ -12527,7 +12546,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #43 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #44 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 {main}
-"} 
+"}
 [2021-05-27 19:08:04] local.ERROR: count(): Argument #1 ($value) must be of type Countable|array, null given {"exception":"[object] (TypeError(code: 0): count(): Argument #1 ($value) must be of type Countable|array, null given at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:37)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(37): count(NULL)
@@ -12576,7 +12595,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #43 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #44 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 {main}
-"} 
+"}
 [2021-05-27 19:08:10] local.ERROR: count(): Argument #1 ($value) must be of type Countable|array, null given {"exception":"[object] (TypeError(code: 0): count(): Argument #1 ($value) must be of type Countable|array, null given at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php:37)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\app\\Http\\Controllers\\DocumentController.php(37): count(NULL)
@@ -12625,7 +12644,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #43 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #44 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 {main}
-"} 
+"}
 [2021-05-28 09:47:24] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (SQL: SHOW FULL TABLES WHERE table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (SQL: SHOW FULL TABLES WHERE table_type = 'BASE TABLE') at C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
 [stacktrace]
 #0 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('SHOW FULL TABLE...', Array, Object(Closure))
@@ -12705,7 +12724,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #39 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #40 C:\\xampp\\htdocs\\ModernSoftwareDevelopment\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #41 {main}
-"} 
+"}
 [2021-06-01 08:45:50] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'healthyregion' (SQL: select * from `documents`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'healthyregion' (SQL: select * from `documents`) at C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
 [stacktrace]
 #0 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -12831,7 +12850,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #62 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #63 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #64 {main}
-"} 
+"}
 [2021-06-01 08:49:32] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'file_path' in 'field list' (SQL: insert into `documents` (`author`, `project_name`, `document_name`, `keywords`, `language`, `file_path`, `updated_at`, `created_at`) values (Kees, Test, Proef, Onderzoek, Dutch, public/documents/3d7tQ37jh44h3X7r9VKiBgkb4WCboTyjyoJfUBzt.png, 2021-06-01 08:49:31, 2021-06-01 08:49:31)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'file_path' in 'field list' (SQL: insert into `documents` (`author`, `project_name`, `document_name`, `keywords`, `language`, `file_path`, `updated_at`, `created_at`) values (Kees, Test, Proef, Onderzoek, Dutch, public/documents/3d7tQ37jh44h3X7r9VKiBgkb4WCboTyjyoJfUBzt.png, 2021-06-01 08:49:31, 2021-06-01 08:49:31)) at C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
 [stacktrace]
 #0 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('insert into `do...', Array, Object(Closure))
@@ -12961,7 +12980,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #60 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #61 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #62 {main}
-"} 
+"}
 [2021-06-01 08:49:50] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`healthy_region`.`junctions`, CONSTRAINT `junctions_filter_id_foreign` FOREIGN KEY (`filter_id`) REFERENCES `filters` (`id`) ON DELETE CASCADE) (SQL: insert into `junctions` (`document_id`, `filter_id`) values (1, 2)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`healthy_region`.`junctions`, CONSTRAINT `junctions_filter_id_foreign` FOREIGN KEY (`filter_id`) REFERENCES `filters` (`id`) ON DELETE CASCADE) (SQL: insert into `junctions` (`document_id`, `filter_id`) values (1, 2)) at C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:685)
 [stacktrace]
 #0 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(645): Illuminate\\Database\\Connection->runQueryCallback('insert into `ju...', Array, Object(Closure))
@@ -13069,7 +13088,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #49 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #50 C:\\Users\\31641\\Documents\\GitHub\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #51 {main}
-"} 
+"}
 [2021-06-01 09:18:25] local.ERROR: include(C:\Users\31615\Desktop\Blok3\ModernSoftwareDevelopment\vendor\composer/../facade/flare-client-php/src/Middleware/CensorRequestBodyFields.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer/../facade/flare-client-php/src/Middleware/CensorRequestBodyFields.php): Failed to open stream: No such file or directory at C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php:476)
 [stacktrace]
 #0 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\composer\\ClassLoader.php(476): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'include(C:\\\\User...', 'C:\\\\Users\\\\31615\\\\...', 476)
@@ -13087,7 +13106,7 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #12 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #13 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #14 {main}
-"} 
+"}
 [2021-06-01 09:19:32] local.ERROR: Class "Facade\FlareClient\Middleware\CensorRequestBodyFields" not found {"exception":"[object] (Error(code: 0): Class \"Facade\\FlareClient\\Middleware\\CensorRequestBodyFields\" not found at C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\facade\\flare-client-php\\src\\Flare.php:275)
 [stacktrace]
 #0 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\facade\\ignition\\src\\IgnitionServiceProvider.php(134): Facade\\FlareClient\\Flare->censorRequestBodyFields(Array)
@@ -13100,4 +13119,4 @@ esources\\views/documents/index.blade.php(59): Illuminate\\Foundation\\Bootstrap
 #7 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
 #8 C:\\Users\\31615\\Desktop\\Blok3\\ModernSoftwareDevelopment\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #9 {main}
-"} 
+"}
