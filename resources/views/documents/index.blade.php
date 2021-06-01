@@ -11,7 +11,8 @@
                 @foreach($filters as $filter)
                     <input
                         class="form-control"
-                        id="name" name="filters[]"
+                        id="name"
+                        name="filters[]"
                         value="{{ $filter->id }}"
                         type="checkbox">
                     <label>{{ $filter->filterName }}</label>
