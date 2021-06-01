@@ -180,10 +180,8 @@ input {
     color: white;
 }
 
-.filter {
-    padding: 20px;
-    background-color: #005095;
-    color: white;
+.documents:hover {
+    background-color: #008CC3;
 }
 
 .login {
@@ -192,10 +190,28 @@ input {
     color: white;
 }
 
-.register {
+.login:hover {
+    background-color: #00427C;
+}
+
+.dashboard {
     padding: 20px;
     background-color: #005095;
     color: white;
+}
+
+.dashboard:hover {
+    background-color: #00427C;
+}
+
+.register {
+    padding: 20px;
+    background-color: #007acc;
+    color: white;
+}
+
+.register:hover {
+    background-color: #008CC3;
 }
 
 .text {
@@ -218,5 +234,26 @@ input {
     float: left;
     width: 80%;
 }
+
+#lightBlue{
+    color: red;
+}
+
+#navBar a{
+    color: whitesmoke;
+}
+.header{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.submitFilter{
+    margin: 5px;
+}
+
+.submitFilter:hover{
+    opacity: 50%;
+}
+
 
 

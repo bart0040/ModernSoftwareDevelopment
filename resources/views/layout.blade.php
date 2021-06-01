@@ -28,24 +28,18 @@
 
 <ul>
     <div class="wrapper" id="navBar">
-{{--        <li class="home">--}}
-{{--            <a href="/" id="kaas" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>--}}
-{{--        </li>--}}
         <li class="documents">
-            <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
-        </li>
-        <li class="filter">
-            <a href="/filter" {{ Request::path() === 'filter' ? "is-active" : "" }}"> Filter </a>
+            <a href="/" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
         </li>
         @if(Auth::check())
             <li class="documents">
-                <a href="/dashboard" {{ Request::path() === 'dashboard' ? "is-active" : "" }}">Dashboard</a>
+                <a href="/dashboard" {{ Request::path() === 'dashboard' ? "is-active" : "" }}"> Dashboard </a>
             </li>
         @else
             <li class="login">
             <a href="/login" {{ Request::path() === 'login' ? "is-active" : "" }}"> Log in </a>
         </li>
-        <li class="register">
+        <li class="register" id="lightBlue">
             <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
         </li>
             @endif
