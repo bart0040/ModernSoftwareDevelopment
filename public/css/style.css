@@ -186,19 +186,13 @@ input {
     color: white;
 }
 
-.register {
-    padding: 20px;
-    background-color: #005095;
-    color: white;
-}
-
 .login {
     padding: 20px;
     background-color: #005095;
     color: white;
 }
 
-.logout {
+.register {
     padding: 20px;
     background-color: #005095;
     color: white;

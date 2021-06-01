@@ -14,11 +14,27 @@
         "alpinejs": "^2.7.3",
         "autoprefixer": "^10.1.0",
         "axios": "^0.21",
+<<<<<<< HEAD
+        "cross-env": "^7.0.3",
+        "laravel-mix": "^5.0.1",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "postcss-import": "^12.0",
+        "postcss-nested": "^4.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "^1.32.11",
+        "sass-loader": "^11.0.1",
+        "tailwindcss": "^1.8",
+        "vue-template-compiler": "^2.6.11"
+=======
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.2.1",
         "postcss-import": "^12.0.1",
         "tailwindcss": "^2.0.2"
+>>>>>>> 50908fa28a2ca7febff93486fe13e1118d7c339a
     },
     "dependencies": {
         "bulma": "^0.9.2"
