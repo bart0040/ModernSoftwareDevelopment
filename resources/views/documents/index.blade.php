@@ -6,7 +6,7 @@
         @csrf
         <div id="parentDiv">
 
-            @if()<div id="filterOptions">
+            <div id="filterOptions">
                 <p> Taal </p>
                 @foreach($filters as $filter)
                     <input

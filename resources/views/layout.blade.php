@@ -49,7 +49,19 @@
             <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
         </li>
             @endif
-        <li class="searchBar"><input></li>
+
+        <li>
+            <form class="searchBar" method="POST" action="{{ route('addkeywords') }}">
+                @csrf
+
+                <input name="keyword" id="keyword"
+                       type="text" placeholder="Kernwoord hier.."
+                       value=""
+                >
+                <button type="submit">Voeg toe</button>
+            </form>
+        </li>
+
     </div>
 </ul>
 

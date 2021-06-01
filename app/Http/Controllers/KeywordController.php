@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Keyword;
 use Illuminate\Http\Request;
 
 class KeywordController extends Controller
@@ -14,7 +15,7 @@ class KeywordController extends Controller
      */
     public function index()
     {
-        //
+        $keywords = Keyword::all();
     }
 
     /**
@@ -24,24 +25,29 @@ class KeywordController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+
+        $keyword = new Keyword();
+        $keyword->keyword = $request->input('keyword');
+        $keyword->save();
+
+        return redirect(route('documents.index'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -52,7 +58,7 @@ class KeywordController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -63,19 +69,20 @@ class KeywordController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Keyword $keyword)
     {
-        //
+        $keyword->update($this->validateKeyword($request));
+        $keyword->save();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
@@ -83,5 +90,10 @@ class KeywordController extends Controller
         //
     }
 
-
+    private function validateKeyword($request)
+    {
+        return $request->validate([
+            'name' => 'required'
+        ]);
+    }
 }

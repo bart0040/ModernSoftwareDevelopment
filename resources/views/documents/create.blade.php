@@ -134,11 +134,15 @@
 
         <div class="field">
             <label for="keywords" class="label"><strong>Keywords:</strong></label>
-            <input
-                class="input"
-                type="text"
-                id="keywords"
-                name="keywords">
+            <form class="searchBar" method="POST"  enctype="multipart/form-data" action="{{ route('addkeywords') }}">
+                @csrf
+
+                <input name="keyword" id="keyword"
+                       type="text" placeholder="Kernwoord hier.."
+                       value=""
+                >
+{{--                <button type="submit">Voeg toe</button>--}}
+            </form>
         </div>
 
         <div class="field">
@@ -176,6 +180,7 @@
                 id="document"
                 name="document">
         </div>
+
 
         <input
             type="submit"

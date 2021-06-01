@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KeywordController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\FilterController;
@@ -25,6 +26,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::resource('/documents', DocumentController::class);
+Route::post('/documents/keywords', [KeywordController::class, 'store'])->name('addkeywords');
 Route::resource('/filter', Filtercontroller::class, ['except' => ['create', 'show']]);
 Route::post('/showFiltered', [DocumentController::class, 'showFiltered']);
 

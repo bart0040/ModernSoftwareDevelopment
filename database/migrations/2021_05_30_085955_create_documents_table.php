@@ -18,7 +18,7 @@ class CreateDocumentsTable extends Migration
             $table->string('author');
             $table->string('project_name');
             $table->string('document_name');
-            $table->string('keywords');
+//            $table->string('keywords');
             $table->string('language');
 //            $table->string('file_type')->nullable();
             //#TODO make it a longText into a document type.
