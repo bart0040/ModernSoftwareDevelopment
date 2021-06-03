@@ -35,6 +35,10 @@
             <li class="documents">
                 <a href="/dashboard" {{ Request::path() === 'dashboard' ? "is-active" : "" }}"> Dashboard </a>
             </li>
+
+            <li class="logout">
+                <a href="{{ url('/logout') }}"> Log out </a>
+            </li>
         @else
             <li class="login">
             <a href="/login" {{ Request::path() === 'login' ? "is-active" : "" }}"> Log in </a>

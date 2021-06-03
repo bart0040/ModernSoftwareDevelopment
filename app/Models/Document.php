@@ -14,4 +14,9 @@ class Document extends Model
     public function filters(){
         return $this->belongsToMany(Filter::class, 'junctions', 'document_id', 'filter_id');
     }
+
+    public function keywords()
+    {
+        return $this->hasMany(Keyword::class);
+    }
 }

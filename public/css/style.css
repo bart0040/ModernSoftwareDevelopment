@@ -120,6 +120,11 @@ input {
     /*width: calc(100% - 200px);*/
 }
 
+inputKeyword{
+    float: left;
+    /*width: calc(100% - 200px);*/
+}
+
 #button1 {
     background-color: lightgreen;
 }
@@ -256,4 +261,8 @@ input {
 }
 
 
+.searchBar{
+    margin-left: auto;
+    margin-right: auto;
+}
 

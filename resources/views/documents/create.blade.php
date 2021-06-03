@@ -31,11 +31,11 @@
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Nederlands:</strong></label>
             <div class="control">
-            <input
-                type="checkbox"
-                id="filter_id"
-                name="filter_ids[]"
-                value="1">
+                <input
+                    type="checkbox"
+                    id="filter_id"
+                    name="filter_ids[]"
+                    value="1">
             </div>
         </div>
 
@@ -44,11 +44,11 @@
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Engels:</strong></label>
             <div class="control">
-            <input
-                type="checkbox"
-                id="filter_id"
-                name="filter_ids[]"
-                value="2">
+                <input
+                    type="checkbox"
+                    id="filter_id"
+                    name="filter_ids[]"
+                    value="2">
             </div>
         </div>
 
@@ -57,11 +57,11 @@
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Overige Taal:</strong></label>
             <div class="control">
-            <input
-                type="checkbox"
-                id="filter_id"
-                name="filter_ids[]"
-                value="3">
+                <input
+                    type="checkbox"
+                    id="filter_id"
+                    name="filter_ids[]"
+                    value="3">
             </div>
         </div>
 
@@ -70,11 +70,11 @@
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Word bestand:</strong></label>
             <div class="control">
-            <input
-                type="checkbox"
-                id="filter_id"
-                name="filter_ids[]"
-                value="4">
+                <input
+                    type="checkbox"
+                    id="filter_id"
+                    name="filter_ids[]"
+                    value="4">
             </div>
         </div>
 
@@ -83,11 +83,11 @@
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Powerpoint bestand:</strong></label>
             <div class="control">
-            <input
-                type="checkbox"
-                id="filter_id"
-                name="filter_ids[]"
-                value="5">
+                <input
+                    type="checkbox"
+                    id="filter_id"
+                    name="filter_ids[]"
+                    value="5">
             </div>
         </div>
 
@@ -96,11 +96,11 @@
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Pdf bestand:</strong></label>
             <div class="control">
-            <input
-                type="checkbox"
-                id="filter_id"
-                name="filter_ids[]"
-                value="6">
+                <input
+                    type="checkbox"
+                    id="filter_id"
+                    name="filter_ids[]"
+                    value="6">
             </div>
         </div>
 
@@ -109,11 +109,11 @@
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Overig bestand:</strong></label>
             <div class="control">
-            <input
-                type="checkbox"
-                id="filter_id"
-                name="filter_ids[]"
-                value="7">
+                <input
+                    type="checkbox"
+                    id="filter_id"
+                    name="filter_ids[]"
+                    value="7">
             </div>
         </div>
 
@@ -122,11 +122,11 @@
         <div class="field">
             <label for="document_name" class="label"><strong>Document Name:</strong></label>
             <div class="control">
-            <input
-                class="input"
-                type="text"
-                id="document_name"
-                name="document_name">
+                <input
+                    class="input"
+                    type="text"
+                    id="document_name"
+                    name="document_name">
             </div>
         </div>
 
@@ -134,11 +134,12 @@
 
         <div class="field">
             <label for="keywords" class="label"><strong>Keywords:</strong></label>
-            <input
-                class="input"
-                type="text"
-                id="keywords"
-                name="keywords">
+                <input class="input" name="keywords_name[]" id="keywords"
+                       type="text" placeholder="Kernwoord hier.."
+                       value=""
+                >
+
+
         </div>
 
         <div class="field">
@@ -154,19 +155,6 @@
             </select>
         </div>
 
-{{--        <div class="field">--}}
-{{--            <label for="file_type" class="label"><strong>File type:</strong></label>--}}
-{{--            <select--}}
-{{--                class="input"--}}
-{{--                type="text"--}}
-{{--                id="file_type"--}}
-{{--                name="file_type">--}}
-{{--                <option value="Word">Word</option>--}}
-{{--                <option value="Powerpoint">Powerpoint</option>--}}
-{{--                <option value="Excel">Excel</option>--}}
-{{--                <option value="Pdf">Pdf</option>--}}
-{{--            </select>--}}
-{{--        </div>--}}
 
         <div class="field">
             <label for="document" class="label"><strong>Document:</strong></label>
@@ -176,6 +164,7 @@
                 id="document"
                 name="document">
         </div>
+
 
         <input
             type="submit"
@@ -191,5 +180,6 @@
             id="button3"
             value="Cancel">
     </form>
+
 
 @endsection

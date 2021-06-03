@@ -38,7 +38,7 @@
                         <th>Document Name</th>
                         <th>Author</th>
                         <th>Document</th>
-                        <th>Keywords</th>
+{{--                        <th>Keywords</th>--}}
                         <th>Language</th>
                         <th>Created at</th>
                         <th>Edit</th>
@@ -64,8 +64,10 @@
         </div>
     </form>
 
+    @if(Auth::check()){
     <a href="/documents/create">
         <button class="button" id="addDocBut"> Add new document</button>
     </a>
+    @endif
 
 @endsection
