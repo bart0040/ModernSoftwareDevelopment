@@ -11,5 +11,10 @@ class Keyword extends Model
 
     protected $fillable = ['keyword'];
 
+    public function keywords()
+    {
+        return $this->belongsTo(Document::class);
+    }
+
 
 }

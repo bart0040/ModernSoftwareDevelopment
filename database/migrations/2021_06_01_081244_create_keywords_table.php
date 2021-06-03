@@ -15,8 +15,11 @@ class CreateKeywordsTable extends Migration
     {
         Schema::create('keywords', function (Blueprint $table) {
             $table->id();
-            $table->text('keyword');
+            $table->string('keyword');
             $table->timestamps();
+            $table->unsignedBigInteger('document_id')->nullable();
+            $table->foreign('document_id')->references('id')->on('documents')->onDelete('cascade');
+
         });
     }
 

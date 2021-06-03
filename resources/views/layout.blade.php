@@ -28,12 +28,13 @@
 
 <ul>
     <div class="wrapper" id="navBar">
-{{--        <li class="home">--}}
-{{--            <a href="/" id="kaas" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>--}}
-{{--        </li>--}}
+        {{--        <li class="home">--}}
+        {{--            <a href="/" id="kaas" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>--}}
+        {{--        </li>--}}
         <li class="documents">
             <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
         </li>
+
         <li class="filter">
             <a href="/filter" {{ Request::path() === 'filter' ? "is-active" : "" }}"> Filter </a>
         </li>
@@ -41,26 +42,32 @@
             <li class="documents">
                 <a href="/dashboard" {{ Request::path() === 'dashboard' ? "is-active" : "" }}">Dashboard</a>
             </li>
+
+            <li class="logout">
+                <a href="{{ url('/logout') }}"> Log out </a>
+            </li>
         @else
             <li class="login">
-            <a href="/login" {{ Request::path() === 'login' ? "is-active" : "" }}"> Log in </a>
-        </li>
-        <li class="register">
-            <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
-        </li>
-            @endif
+                <a href="/login" {{ Request::path() === 'login' ? "is-active" : "" }}"> Log in </a>
+            </li>
 
-        <li>
-            <form class="searchBar" method="POST" action="{{ route('addkeywords') }}">
-                @csrf
+            <li class="register">
+                <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
+            </li>
 
-                <input name="keyword" id="keyword"
-                       type="text" placeholder="Kernwoord hier.."
-                       value=""
-                >
-                <button type="submit">Voeg toe</button>
-            </form>
-        </li>
+        @endif
+
+        {{--        <li>--}}
+        {{--            <form class="searchBar" method="POST" action="{{ route('addkeywords') }}">--}}
+        {{--                @csrf--}}
+
+        {{--                <input name="keyword" id="keyword"--}}
+        {{--                       type="text" placeholder="Kernwoord hier.."--}}
+        {{--                       value=""--}}
+        {{--                >--}}
+        {{--                <button type="submit">Voeg toe</button>--}}
+        {{--            </form>--}}
+        {{--        </li>--}}
 
     </div>
 </ul>
