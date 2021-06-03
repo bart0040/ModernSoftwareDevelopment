@@ -193,6 +193,11 @@ inputKeyword{
     padding: 20px;
     background-color: #005095;
     color: white;
+
+}.logout {
+    padding: 20px;
+    background-color: #005095;
+    color: white;
 }
 
 .login:hover {
