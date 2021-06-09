@@ -28,9 +28,7 @@
 
 <ul>
     <div class="wrapper" id="navBar">
-        {{--        <li class="home">--}}
-        {{--            <a href="/" id="kaas" {{ Request::path() === '/' ? "is-active" : "" }}"> Home </a>--}}
-        {{--        </li>--}}
+
         <li class="documents">
             <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
         </li>
@@ -57,17 +55,6 @@
 
         @endif
 
-        {{--        <li>--}}
-        {{--            <form class="searchBar" method="POST" action="{{ route('addkeywords') }}">--}}
-        {{--                @csrf--}}
-
-        {{--                <input name="keyword" id="keyword"--}}
-        {{--                       type="text" placeholder="Kernwoord hier.."--}}
-        {{--                       value=""--}}
-        {{--                >--}}
-        {{--                <button type="submit">Voeg toe</button>--}}
-        {{--            </form>--}}
-        {{--        </li>--}}
 
     </div>
 </ul>
