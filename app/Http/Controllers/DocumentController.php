@@ -66,15 +66,15 @@ class DocumentController extends Controller
         //$request
         $document = Document::create($this->validateDocument($request));
 
-        $d_id = $document->id;
+        $document_id = $document->id;
 
-        foreach ($request->filter_ids as $f_id) {
-            \DB::table('junctions')->insert(array('document_id' => $d_id, 'filter_id' => $f_id));
+        foreach ($request->filter_ids as $filter_id) {
+            \DB::table('junctions')->insert(array('document_id' => $document_id, 'filter_id' => $filter_id));
         }
 
 
-        foreach ($request->keywords_name as $k_id) {
-            \DB::table('keywords')->insert(array('keyword' => $k_id, 'document_id' => $d_id));
+        foreach ($request->keywords_name as $keyword_id) {
+            \DB::table('keywords')->insert(array('keyword' => $keyword_id, 'document_id' => $document_id));
 
         }
 
