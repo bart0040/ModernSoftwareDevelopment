@@ -73,7 +73,10 @@ class DocumentController extends Controller
             \DB::table('junctions')->insert(array('document_id' => $document_id, 'filter_id' => $filter_id));
         }
 
-
+        /**
+         *  This foreach adds the keywords to the document id
+         *
+         */
         foreach ($request->keywords_name as $keyword_id) {
             \DB::table('keywords')->insert(array('keyword' => $keyword_id, 'document_id' => $document_id));
 

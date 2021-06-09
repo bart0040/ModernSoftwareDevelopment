@@ -157,24 +157,26 @@
     <script>
         let i = 1;
 
+        /**
+         * this function adds a keyword input row
+         *
+         */
         function addKeyword() {
             i++
-            let html = "<tr>";
-            html += "<td>";
-            html += "<input class='input' name='keywords_name[]' id='keywords' type='text' placeholder='Keyword here please...' value=''>"
-            html += "</td>"
-            html += "<td>"
-            html += "<button type='button' class='button' id='button1' onclick='addKeyword()'>+</button>"
-            html += "</td>"
-            html += "<td>"
-            html += "<button type='button' class='button' id='button2' onclick='deleteKeyword()'>-</button>"
-            html += "</td>"
-            html += "</tr>";
-
-            document.getElementById("keywordsTable").insertRow().innerHTML = html;
+            document.getElementById("keywordsTable").insertRow().innerHTML =
+                "<tr><td>" +
+                "<input class='input' name='keywords_name[]' id='keywords' type='text' placeholder='Keyword here please...' value=''>" +
+                "</td><td>" +
+                "<button type='button' class='button' id='button1' onclick='addKeyword()'>+</button>" +
+                "</td><td><button type='button' class='button' id='button2' onclick='deleteKeyword()'>-</button>" +
+                "</td></tr>";
 
         }
 
+        /**
+         * this function deletes an added keyword input row
+         *
+         */
         function deleteKeyword() {
             i--
             document.getElementById("keywordsTable").deleteRow(i);

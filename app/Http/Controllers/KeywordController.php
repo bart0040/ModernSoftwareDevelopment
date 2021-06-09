@@ -41,7 +41,6 @@ class KeywordController extends Controller
         $keyword->keyword = $request->input('keyword');
         $keyword->save();
 
-        return redirect(route('documents.index'));
     }
 
     /**

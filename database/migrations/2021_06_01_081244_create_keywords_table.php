@@ -8,6 +8,7 @@ class CreateKeywordsTable extends Migration
 {
     /**
      * Run the migrations.
+     * The function up makes it possible to connect the table documents to the good keywords by adding a good relation on the id's
      *
      * @return void
      */
