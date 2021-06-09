@@ -28,43 +28,6 @@
             </div>
         </div>
 
-        <div class="field">
-            <label for="project_name" class="checkbox"><strong>Nederlands:</strong></label>
-            <div class="control">
-                <input
-                    type="checkbox"
-                    id="filter_id"
-                    name="filter_ids[]"
-                    value="1">
-            </div>
-        </div>
-
-        <br>
-
-        <div class="field">
-            <label for="project_name" class="checkbox"><strong>Engels:</strong></label>
-            <div class="control">
-                <input
-                    type="checkbox"
-                    id="filter_id"
-                    name="filter_ids[]"
-                    value="2">
-            </div>
-        </div>
-
-        <br>
-
-        <div class="field">
-            <label for="project_name" class="checkbox"><strong>Overige Taal:</strong></label>
-            <div class="control">
-                <input
-                    type="checkbox"
-                    id="filter_id"
-                    name="filter_ids[]"
-                    value="3">
-            </div>
-        </div>
-
         <br>
 
         <div class="field">
@@ -134,13 +97,24 @@
 
         <div class="field">
             <label for="keywords" class="label"><strong>Keywords:</strong></label>
-                <input class="input" name="keywords_name[]" id="keywords"
-                       type="text" placeholder="Kernwoord hier.."
-                       value=""
-                >
-
-
+            <br>
         </div>
+
+        <table id="keywordsTable">
+            <tr>
+                <td>
+                    <input class="input" name="keywords_name[]" id="keywords" type="text"
+                           placeholder="Keyword here please..." required
+                           value="">
+                </td>
+                <td>
+                    <button type='button' class='button' id='button1' onclick='addKeyword()'>+</button>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+        </table>
 
         <div class="field">
             <label for="language" class="label"><strong>Language:</strong></label>
@@ -154,7 +128,6 @@
                 <option value="Other">Other</option>
             </select>
         </div>
-
 
         <div class="field">
             <label for="document" class="label"><strong>Document:</strong></label>
@@ -180,6 +153,34 @@
             id="button3"
             value="Cancel">
     </form>
+
+    <script>
+        let i = 1;
+
+        function addKeyword() {
+            i++
+            let html = "<tr>";
+            html += "<td>";
+            html += "<input class='input' name='keywords_name[]' id='keywords' type='text' placeholder='Keyword here please...' value=''>"
+            html += "</td>"
+            html += "<td>"
+            html += "<button type='button' class='button' id='button1' onclick='addKeyword()'>+</button>"
+            html += "</td>"
+            html += "<td>"
+            html += "<button type='button' class='button' id='button2' onclick='deleteKeyword()'>-</button>"
+            html += "</td>"
+            html += "</tr>";
+
+            document.getElementById("keywordsTable").insertRow().innerHTML = html;
+
+        }
+
+        function deleteKeyword() {
+            i--
+            document.getElementById("keywordsTable").deleteRow(i);
+        }
+
+    </script>
 
 
 @endsection

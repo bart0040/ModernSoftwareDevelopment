@@ -59,6 +59,7 @@ class DocumentController extends Controller
      */
     public function store(Request $request)
     {
+//        dd($request);
 
         $path = $request->file('document')->store('public/documents');
         $request->merge(['file_path' => $path]);

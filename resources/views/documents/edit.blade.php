@@ -80,11 +80,14 @@
         <div class="field">
             <label class="label">Keywords: </label>
             <div class="control">
+                @foreach($document->keywords as $keyword)
+
                 <input
                     name="keywords"
                     class="input @error('keywords') is-danger @enderror"
                     type="text"
-                    value="{{ old('keywords', $document->keywords) }}">
+                    value="{{ old('keywords', $keyword->keyword) }}">
+                @endforeach
             </div>
             @error('keywords')
             <p class="help is-danger">{{ $message }}</p>
