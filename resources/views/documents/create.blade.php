@@ -29,6 +29,44 @@
         </div>
 
         <br>
+        <div class="field">
+            <label for="project_name" class="checkbox"><strong>Nederlands:</strong></label>
+            <div class="control">
+                <input
+                    type="checkbox"
+                    id="filter_id"
+                    name="filter_ids[]"
+                    value="1">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="field">
+            <label for="project_name" class="checkbox"><strong>Engels:</strong></label>
+            <div class="control">
+                <input
+                    type="checkbox"
+                    id="filter_id"
+                    name="filter_ids[]"
+                    value="2">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="field">
+            <label for="project_name" class="checkbox"><strong>Overige Taal:</strong></label>
+            <div class="control">
+                <input
+                    type="checkbox"
+                    id="filter_id"
+                    name="filter_ids[]"
+                    value="3">
+            </div>
+        </div>
+
+        <br>
 
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Word bestand:</strong></label>
@@ -116,18 +154,6 @@
             </tr>
         </table>
 
-        <div class="field">
-            <label for="language" class="label"><strong>Language:</strong></label>
-            <select
-                class="input"
-                type="text"
-                id="language"
-                name="language">
-                <option value="Dutch">Dutch</option>
-                <option value="English">English</option>
-                <option value="Other">Other</option>
-            </select>
-        </div>
 
         <div class="field">
             <label for="document" class="label"><strong>Document:</strong></label>
