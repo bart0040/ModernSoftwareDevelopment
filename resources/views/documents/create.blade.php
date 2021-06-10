@@ -28,6 +28,7 @@
             </div>
         </div>
 
+        <br>
         <div class="field">
             <label for="project_name" class="checkbox"><strong>Nederlands:</strong></label>
             <div class="control">
@@ -134,26 +135,26 @@
 
         <div class="field">
             <label for="keywords" class="label"><strong>Keywords:</strong></label>
-                <input class="input" name="keywords_name[]" id="keywords"
-                       type="text" placeholder="Kernwoord hier.."
-                       value=""
-                >
-
-
+            <br>
         </div>
 
-        <div class="field">
-            <label for="language" class="label"><strong>Language:</strong></label>
-            <select
-                class="input"
-                type="text"
-                id="language"
-                name="language">
-                <option value="Dutch">Dutch</option>
-                <option value="English">English</option>
-                <option value="Other">Other</option>
-            </select>
-        </div>
+        <table id="keywordsTable">
+            <tr>
+                <td>
+                    <input class="input" name="keywords_name[]" id="keywords" type="text"
+                           placeholder="Keyword here please..." required
+                           value="">
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <button type='button' class='button' id='button1' onclick='addKeyword()'>+</button>
+                </td>
+            </tr>
+        </table>
+        <br>
 
 
         <div class="field">
@@ -180,6 +181,31 @@
             id="button3"
             value="Cancel">
     </form>
+
+    <script>
+        /**
+         * this function adds a keyword input row
+         *
+         */
+        function addKeyword() {
+            document.getElementById("keywordsTable").insertRow().innerHTML =
+                "<tr><td>" +
+                "<input class='input' name='keywords_name[]' id='keywords' type='text' placeholder='Keyword here please...' value=''>" +
+                "</td><td>" +
+                "</td><td><button type='button' class='button' id='button2' onclick='deleteRow(this)'>-</button>" +
+                "</td></tr>";
+        }
+
+        /**
+         * this function deletes an added keyword input row
+         *
+         */
+        function deleteRow(r) {
+            let i = r.parentNode.parentNode.rowIndex;
+            document.getElementById("keywordsTable").deleteRow(i);
+
+        }
+    </script>
 
 
 @endsection

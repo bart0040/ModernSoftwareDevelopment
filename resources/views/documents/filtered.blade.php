@@ -54,7 +54,15 @@
                             <td>{{ $document->document_name }}</td>
                             <td>{{ $document->author }}</td>
                             <td><a href="{{Storage::url($document->file_path)}}">Download File</a></td>
-                            <td>{{ $document->keywords }}</td>
+                            <td>
+                                <select>
+                                    @foreach($document->keywords as $keyword)
+                                        <option value="keyword">
+                                            {{ $keyword->keyword }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                            </td>
                             <td>{{ $document->language }}</td>
                             <td>{{ $document->updated_at }}</td>
                             <td><a href="{{ route('documents.edit', $document->id) }}">Edit</a></td>

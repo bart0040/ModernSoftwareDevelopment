@@ -39,7 +39,6 @@
                         <th>Author</th>
                         <th>Document</th>
                         <th>Keywords</th>
-                        <th>Language</th>
                         <th>Created at</th>
                         <th>Edit</th>
                     </tr>
@@ -60,7 +59,6 @@
                                     @endforeach
                                 </select>
                             </td>
-                            <td>{{ $document->language }}</td>
                             <td>{{ $document->updated_at }}</td>
                             <td><a href="{{ route('documents.edit', $document->id) }}">Edit</a></td>
                         </tr>

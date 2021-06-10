@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="545dbe48-f87b-4f26-b58f-dc2838e89462" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HealthyRegion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HealthyRegion.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/example.ahElsQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/example.ahElsQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/healthy_region.1j_RBg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf65a6b-ad4f-45d2-9253-dd11c317d398/storage_v2/_src_/schema/healthy_region.1j_RBg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KeywordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KeywordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/documents/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/documents/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/documents/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -258,6 +250,9 @@
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
     </include_path>
   </component>
   <component name="ProjectId" id="1qFEXidlYpXDOrpEK3HUSS0xqr9" />
@@ -270,7 +265,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel-portfolio-assignment-KeesJoziasse" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../framework_development_2_opdrachten/Security/security-site" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -309,6 +304,7 @@
       <workItem from="1622622876263" duration="12269000" />
       <workItem from="1622713146226" duration="5711000" />
       <workItem from="1623227287898" duration="3475000" />
+      <workItem from="1623312442095" duration="10486000" />
     </task>
     <servers />
   </component>
