@@ -28,17 +28,12 @@
 
 <ul>
     <div class="wrapper" id="navBar">
-
         <li class="documents">
             <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
         </li>
-
-        <li class="filter">
-            <a href="/filter" {{ Request::path() === 'filter' ? "is-active" : "" }}"> Filter </a>
-        </li>
         @if(Auth::check())
             <li class="documents">
-                <a href="/dashboard" {{ Request::path() === 'dashboard' ? "is-active" : "" }}">Dashboard</a>
+                <a href="/dashboard" {{ Request::path() === 'dashboard' ? "is-active" : "" }}"> Dashboard </a>
             </li>
 
             <li class="logout">
@@ -46,16 +41,16 @@
             </li>
         @else
             <li class="login">
-                <a href="/login" {{ Request::path() === 'login' ? "is-active" : "" }}"> Log in </a>
-            </li>
-
-            <li class="register">
-                <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
-            </li>
-
-        @endif
-
-
+            <a href="/login" {{ Request::path() === 'login' ? "is-active" : "" }}"> Log in </a>
+        </li>
+        <li class="register" id="lightBlue">
+            <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
+        </li>
+            @endif
+        <form action="{{ route('search') }}" method="GET">
+            <input type="text" name="search" required/>
+            <button type="submit">Search</button>
+        </form>
     </div>
 </ul>
 
