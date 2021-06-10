@@ -21,8 +21,9 @@
                 <p class="help is-danger">{{ $message }}</p>
                 @enderror
             </div>
-
+            <br>
             @foreach($filters as $filter)
+                <br>
                 <div class="field">
                     <input class="form-control" id="name" name="filters[]" value="{{ $filter->id }}" type="checkbox"
                            @foreach($filterIds as $id)
@@ -32,8 +33,8 @@
                         @endforeach>
                     <label>{{ $filter->filterName }}</label>
                 </div>
-                <br>
             @endforeach
+            <br>
 
             <div class="field">
                 <label class="label">Document name: </label>
@@ -83,6 +84,7 @@
             </div>
             <div class="control">
                 <table id="keywordsTable">
+
                     @foreach($document->keywords as $keyword)
                         <tr>
                             <td>
@@ -90,18 +92,29 @@
                                     name="keywords_name[]"
                                     class="input @error('keywords') is-danger @enderror"
                                     type="text"
-                                    value="{{ old('keywords', $keyword->keyword) }}">
+                                    value="{{ old('keywords', $keyword->keyword) }}" required>
+
                             </td>
                             <td>
-                                <button type='button' class='button' id='button1' onclick='addKeyword()'>+</button>
+                                <button type='button' class='button' id='button2' value="Delete"
+                                        onclick='deleteRow(this)'>-
+                                </button>
                             </td>
                             <td>
-                                <button type='button' class='button' id='button2' onclick='deleteKeyword()'>-</button>
                             </td>
                         </tr>
                     @endforeach
+
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <button type='button' class='button' id='button1' onclick='addKeyword()'>+</button>
+                        </td>
+                    </tr>
                 </table>
             </div>
+            <br>
 
             {{-- Here are the form buttons: save, reset and cancel --}}
             <div class="outer">
@@ -152,35 +165,6 @@
     @endguest
 @endsection
 
-<script>
-    let i = 1;
-
-    /**
-     * this function adds a keyword input row
-     *
-     */
-    function addKeyword() {
-        i++
-        document.getElementById("keywordsTable").insertRow().innerHTML =
-            "<tr><td>" +
-            "<input class='input' name='keywords_name[]' id='keywords' type='text' placeholder='Keyword here please...' value=''>" +
-            "</td><td>" +
-            "<button type='button' class='button' id='button1' onclick='addKeyword()'>+</button>" +
-            "</td><td><button type='button' class='button' id='button2' onclick='deleteKeyword()'>-</button>" +
-            "</td></tr>";
-
-    }
-
-    /**
-     * this function deletes an added keyword input row
-     *
-     */
-    function deleteKeyword() {
-        i--
-        document.getElementById("keywordsTable").deleteRow(i);
-    }
-
-</script>
 
 
 

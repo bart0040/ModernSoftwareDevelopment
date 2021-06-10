@@ -145,14 +145,16 @@
                            placeholder="Keyword here please..." required
                            value="">
                 </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
                 <td>
                     <button type='button' class='button' id='button1' onclick='addKeyword()'>+</button>
                 </td>
-                <td>
-
-                </td>
             </tr>
         </table>
+        <br>
 
 
         <div class="field">
@@ -181,33 +183,28 @@
     </form>
 
     <script>
-        let i = 1;
-
         /**
          * this function adds a keyword input row
          *
          */
         function addKeyword() {
-            i++
             document.getElementById("keywordsTable").insertRow().innerHTML =
                 "<tr><td>" +
                 "<input class='input' name='keywords_name[]' id='keywords' type='text' placeholder='Keyword here please...' value=''>" +
                 "</td><td>" +
-                "<button type='button' class='button' id='button1' onclick='addKeyword()'>+</button>" +
-                "</td><td><button type='button' class='button' id='button2' onclick='deleteKeyword()'>-</button>" +
+                "</td><td><button type='button' class='button' id='button2' onclick='deleteRow(this)'>-</button>" +
                 "</td></tr>";
-
         }
 
         /**
          * this function deletes an added keyword input row
          *
          */
-        function deleteKeyword() {
-            i--
+        function deleteRow(r) {
+            let i = r.parentNode.parentNode.rowIndex;
             document.getElementById("keywordsTable").deleteRow(i);
-        }
 
+        }
     </script>
 
 
