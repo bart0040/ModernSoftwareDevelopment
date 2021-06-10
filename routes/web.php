@@ -28,5 +28,6 @@ Route::post('/documents/keywords', [KeywordController::class, 'store'])->name('a
 Route::resource('/filter', Filtercontroller::class, ['except' => ['create', 'show']]);
 Route::post('/showFiltered', [DocumentController::class, 'showFiltered']);
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('/search', 'App\Http\Controllers\SearchController@search')->name('search');
 
 require __DIR__.'/auth.php';

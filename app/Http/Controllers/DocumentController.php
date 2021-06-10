@@ -26,6 +26,8 @@ class DocumentController extends Controller
     {
         $documents = Document::all();
         $filters = Filter::all();
+
+
         return view('documents.index', compact('documents', 'filters'));
     }
 

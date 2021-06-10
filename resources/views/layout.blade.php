@@ -30,7 +30,7 @@
 <ul>
     <div class="wrapper" id="navBar">
         <li class="documents">
-            <a href="/" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
+            <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
         </li>
         @if(Auth::check())
             <li class="documents">
@@ -48,6 +48,10 @@
             <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
         </li>
             @endif
+        <form action="{{ route('search') }}" method="GET">
+            <input type="text" name="search" required/>
+            <button type="submit">Search</button>
+        </form>
     </div>
 </ul>
 
