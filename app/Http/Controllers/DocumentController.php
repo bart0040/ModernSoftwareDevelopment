@@ -76,8 +76,7 @@ class DocumentController extends Controller
         }
 
         /**
-         *  This foreach adds the keywords to the document id
-         *
+         * The foreach is responsible for making an array of keywords and keeping the correct document id
          */
         foreach ($request->keywords_name as $keyword_name) {
             \DB::table('keywords')->insert(array('keyword' => $keyword_name, 'document_id' => $document_id));
@@ -130,6 +129,9 @@ class DocumentController extends Controller
         $document->keywords()->delete();
         $document->filters()->sync($request->filters);
 
+        /**
+         * The foreach is responsible for making an array of keywords and keeping the correct document id
+         */
         foreach ($request->keywords_name as $keyword_name) {
             \DB::table('keywords')->insert(array('keyword' => $keyword_name, 'document_id' => $document->id));
 
