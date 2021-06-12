@@ -49,7 +49,7 @@
                             <td>{{ $document->project_name }}</td>
                             <td>{{ $document->document_name }}</td>
                             <td>{{ $document->author }}</td>
-                            <td><a href="{{Storage::url($document->file_path)}}">Download File</a></td>
+                            <td><a href="/files/{{$document->file_path}}">Download File</a></td>
                             <td>
                                 <select>
                                     @foreach($document->keywords as $keyword)

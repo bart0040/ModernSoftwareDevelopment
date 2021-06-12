@@ -63,7 +63,7 @@ class DocumentController extends Controller
     {
 //        dd($request);
 
-        $path = $request->file('document')->store('public/documents');
+        $path = $request->file('document')->store('files');
         $request->merge(['file_path' => $path]);
         //Code for saving a file
         //$request
