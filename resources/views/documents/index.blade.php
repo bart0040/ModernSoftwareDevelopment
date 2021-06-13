@@ -70,7 +70,7 @@
         </div>
     </form>
 
-    @if(Auth::check()){
+    @if(Auth::check())
     <a href="/documents/create">
         <button class="button" id="addDocBut"> Add new document</button>
     </a>

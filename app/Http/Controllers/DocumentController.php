@@ -7,6 +7,7 @@ use App\Models\Filter;
 use App\Models\Junction;
 use App\Models\Keyword;
 use Exception;
+use File;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -34,6 +35,9 @@ class DocumentController extends Controller
     public function showFiltered(Request $request)
     {
         $filterIds = $request->filters;
+        if($filterIds === null){
+            return redirect('/documents');
+        }
         $filters = Filter::all();
         $z = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds) {
             $q->whereIn('filter_id', $filterIds);
@@ -150,6 +154,8 @@ class DocumentController extends Controller
      */
     public function destroy(Document $document)
     {
+        $path = $path = public_path()."/files/".$document->file_path;
+        unlink($path);
         $document->delete();
         return redirect(route('documents.index'))->with('status', 'document is deleted');
     }
