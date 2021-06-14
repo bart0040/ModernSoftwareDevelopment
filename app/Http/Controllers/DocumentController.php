@@ -7,6 +7,7 @@ use App\Models\Filter;
 use App\Models\Junction;
 use App\Models\Keyword;
 use Exception;
+use File;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -34,6 +35,9 @@ class DocumentController extends Controller
     public function showFiltered(Request $request)
     {
         $filterIds = $request->filters;
+        if($filterIds === null){
+            return redirect('/documents');
+        }
         $filters = Filter::all();
         $z = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds) {
             $q->whereIn('filter_id', $filterIds);
@@ -63,7 +67,7 @@ class DocumentController extends Controller
     {
 //        dd($request);
 
-        $path = $request->file('document')->store('public/documents');
+        $path = $request->file('document')->store('files');
         $request->merge(['file_path' => $path]);
         //Code for saving a file
         //$request
@@ -76,8 +80,7 @@ class DocumentController extends Controller
         }
 
         /**
-         *  This foreach adds the keywords to the document id
-         *
+         * The foreach is responsible for making an array of keywords and keeping the correct document id
          */
         foreach ($request->keywords_name as $keyword_name) {
             \DB::table('keywords')->insert(array('keyword' => $keyword_name, 'document_id' => $document_id));
@@ -130,6 +133,9 @@ class DocumentController extends Controller
         $document->keywords()->delete();
         $document->filters()->sync($request->filters);
 
+        /**
+         * The foreach is responsible for making an array of keywords and keeping the correct document id
+         */
         foreach ($request->keywords_name as $keyword_name) {
             \DB::table('keywords')->insert(array('keyword' => $keyword_name, 'document_id' => $document->id));
 
@@ -148,6 +154,8 @@ class DocumentController extends Controller
      */
     public function destroy(Document $document)
     {
+        $path = $path = public_path()."/files/".$document->file_path;
+        unlink($path);
         $document->delete();
         return redirect(route('documents.index'))->with('status', 'document is deleted');
     }
