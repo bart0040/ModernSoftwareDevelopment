@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="545dbe48-f87b-4f26-b58f-dc2838e89462" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DocumentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DocumentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_01_081244_create_keywords_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_01_081244_create_keywords_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,6 +265,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -304,7 +303,8 @@
       <workItem from="1623264992977" duration="106000" />
       <workItem from="1623316988886" duration="945000" />
       <workItem from="1623392708598" duration="815000" />
-      <workItem from="1623399343025" duration="1082000" />
+      <workItem from="1623399343025" duration="2158000" />
+      <workItem from="1623657587190" duration="1867000" />
     </task>
     <servers />
   </component>
