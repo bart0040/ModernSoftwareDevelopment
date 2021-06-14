@@ -20,7 +20,6 @@ class SearchController extends Controller
             ->where('project_name', 'LIKE', "%{$search}%")
             ->orWhere('document_name', 'LIKE', "%{$search}%")
             ->orWhere('author', 'LIKE', "%{$search}%")
-//            ->orWhere('keyword_id', 'LIKE', "%{$search}%")
             ->get();
 
         // Return the search view with the results compacted

@@ -185,28 +185,43 @@ inputKeyword{
     color: white;
 }
 
-.filter {
-    padding: 20px;
-    background-color: #005095;
-    color: white;
-}
-
-.logout {
-    padding: 20px;
-    background-color: #007acc;
-    color: white;
+.documents:hover {
+    background-color: #008CC3;
 }
 
 .login {
     padding: 20px;
+    background-color: #005095;
+    color: white;
+
+}.logout {
+    padding: 20px;
+    background-color: #005095;
+    color: white;
+}
+
+.login:hover {
+    background-color: #00427C;
+}
+
+.dashboard {
+    padding: 20px;
     background-color: #007acc;
     color: white;
 }
 
+.dashboard:hover {
+    background-color: #00427C;
+}
+
 .register {
     padding: 20px;
-    background-color: #005095;
+    background-color: #007acc;
     color: white;
+}
+
+.register:hover {
+    background-color: #008CC3;
 }
 
 .text {
@@ -229,6 +244,27 @@ inputKeyword{
     float: left;
     width: 80%;
 }
+
+#lightBlue{
+    color: red;
+}
+
+#navBar a{
+    color: whitesmoke;
+}
+.header{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.submitFilter{
+    margin: 5px;
+}
+
+.submitFilter:hover{
+    opacity: 50%;
+}
+
 
 .searchBar{
     margin-left: auto;

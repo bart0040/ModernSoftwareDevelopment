@@ -18,9 +18,6 @@ class CreateDocumentsTable extends Migration
             $table->string('author');
             $table->string('project_name');
             $table->string('document_name');
-            $table->string('language');
-//            $table->string('file_type')->nullable();
-
             $table->string('file_path');
             $table->timestamps();
         });

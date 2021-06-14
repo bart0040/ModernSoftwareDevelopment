@@ -6,6 +6,7 @@
     <title>Healthy Region</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
+    <script type="text/javascript" src="{{ URL::asset('js/script.js') }}"></script>
 
 </head>
 <body>

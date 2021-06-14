@@ -61,6 +61,7 @@ class DocumentController extends Controller
      */
     public function store(Request $request)
     {
+//        dd($request);
 
         $path = $request->file('document')->store('public/documents');
         $request->merge(['file_path' => $path]);
@@ -74,9 +75,12 @@ class DocumentController extends Controller
             \DB::table('junctions')->insert(array('document_id' => $document_id, 'filter_id' => $filter_id));
         }
 
-
-        foreach ($request->keywords_name as $keyword_id) {
-            \DB::table('keywords')->insert(array('keyword' => $keyword_id, 'document_id' => $document_id));
+        /**
+         *  This foreach adds the keywords to the document id
+         *
+         */
+        foreach ($request->keywords_name as $keyword_name) {
+            \DB::table('keywords')->insert(array('keyword' => $keyword_name, 'document_id' => $document_id));
 
         }
 
@@ -123,7 +127,14 @@ class DocumentController extends Controller
      */
     public function update(Request $request, Document $document)
     {
+        $document->keywords()->delete();
         $document->filters()->sync($request->filters);
+
+        foreach ($request->keywords_name as $keyword_name) {
+            \DB::table('keywords')->insert(array('keyword' => $keyword_name, 'document_id' => $document->id));
+
+        }
+
         $document->update($this->validateDocument($request));
         return redirect('/documents');
     }
@@ -147,7 +158,6 @@ class DocumentController extends Controller
             'author' => 'required',
             'project_name' => 'required',
             'document_name' => 'required',
-            'language' => 'required',
             'file_path' => 'required',
         ]);
     }
