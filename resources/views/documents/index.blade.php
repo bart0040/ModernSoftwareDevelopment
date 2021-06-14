@@ -40,7 +40,9 @@
                         <th>Document</th>
                         <th>Keywords</th>
                         <th>Created at</th>
-                        <th>Edit</th>
+                        @if(Auth::check())
+                            <th>Edit</th>
+                        @endif
                     </tr>
                     </thead>
                     <tbody>
@@ -61,7 +63,9 @@
                                 </select>
                             </td>
                             <td>{{ $document->updated_at }}</td>
-                            <td><a href="{{ route('documents.edit', $document->id) }}">Edit</a></td>
+                            @if(Auth::check())
+                                <td><a href="{{ route('documents.edit', $document->id) }}">Edit</a></td>
+                            @endif
                         </tr>
                     @endforeach
                     </tbody>
