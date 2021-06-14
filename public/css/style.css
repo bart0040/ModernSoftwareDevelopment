@@ -190,13 +190,13 @@ inputKeyword{
 }
 
 .login {
-    padding: 20px;
+    padding: 7.5px;
     background-color: #005095;
     color: white;
     float: right;
 
 }.logout {
-    padding: 20px;
+    padding: 7.5px;
     background-color: #005095;
     color: white;
     float: right;
@@ -217,7 +217,7 @@ inputKeyword{
 }
 
 .register {
-    padding: 20px;
+    padding: 7.5px;
     background-color: #007acc;
     color: white;
     float: right;
