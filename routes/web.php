@@ -19,9 +19,6 @@ use App\Http\Controllers\UploadController;
 
 Route::resource('/', DocumentController::class);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
 
 Route::resource('/documents', DocumentController::class);
 Route::post('/documents/keywords', [KeywordController::class, 'store'])->name('addkeywords');

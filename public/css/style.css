@@ -190,14 +190,16 @@ inputKeyword{
 }
 
 .login {
-    padding: 20px;
+    padding: 10px;
     background-color: #005095;
     color: white;
+    float: right;
 
 }.logout {
     padding: 20px;
     background-color: #005095;
     color: white;
+    float: right;
 }
 
 .login:hover {
@@ -218,10 +220,15 @@ inputKeyword{
     padding: 20px;
     background-color: #007acc;
     color: white;
+    float: right;
 }
 
 .register:hover {
     background-color: #008CC3;
+}
+
+.search{
+padding-left: 282px;
 }
 
 .text {

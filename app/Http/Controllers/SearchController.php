@@ -17,11 +17,6 @@ class SearchController extends Controller
 
         $filters = Filter::all();
 
-        $keywords = Keyword::query()
-            ->where('keyword', 'LIKE', "%{$search}%")
-            ->get();
-
-        $documents_keywords = [];
 
         $documents = Document::query()
             ->where('project_name', 'LIKE', "%{$search}%")
@@ -29,16 +24,20 @@ class SearchController extends Controller
             ->orWhere('author', 'LIKE', "%{$search}%")
             ->get();
 
+        $keywords = Keyword::query()
+            ->where('keyword', 'LIKE', "%{$search}%")
+            ->get();
+
         foreach ($keywords as $keyword) {
 
-            array_push($documents_keywords, Document::where($keyword->document_id, 'id'));
+
+            $documents->push($keyword->document);
         }
-            // Return the search view with the results compacted
-            return view('documents.index')
-                ->with(compact('documents'))
-                ->with(compact('filters'))
-                ->with(compact('keywords'))
-                ->with(compact('documents_keywords'));
-        }
+
+        // Return the search view with the results compacted
+        return view('documents.index')
+            ->with(compact('documents'))
+            ->with(compact('filters'));
+    }
 
 }
