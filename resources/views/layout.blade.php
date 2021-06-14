@@ -14,6 +14,7 @@
 <nav class="top-bar" data-topbar role="navigation" data-options="is_hover: true">
 
     <ul class="ul">
+
         @if(Auth::check())
 
 
@@ -28,17 +29,29 @@
                 <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
             </li>
         @endif
+
         <li class="name">
             <a href="https://hz.nl/" title="HZ University of Applied Sciences (nl)">
                 <img class="hz-logo" src="{{asset('/img/hz-logo.svg')}}" alt="HZ University of Applied Sciences (nl)">
             </a>
         </li>
-
     </ul>
 </nav>
 
 <img src="{{asset('/healthyregion-banner.jpg')}}">
 
+
+<!--Menu-->
+
+<ul>
+    <div class="wrapper" id="navBar">
+        <li class="documents">
+            <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
+        </li>
+
+
+    </div>
+</ul>
 <form class="search" action="{{ route('search') }}" method="GET">
     <input type="text" name="search" required/>
     <button type="submit">Search</button>
