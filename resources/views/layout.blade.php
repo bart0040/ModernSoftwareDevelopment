@@ -38,7 +38,7 @@
     </ul>
 </nav>
 
-<img src="{{asset('/healthyregion-banner.jpg')}}">
+<img src="/healthyregion-banner.jpg">
 
 
 <!--Menu-->
