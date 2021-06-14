@@ -15,6 +15,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Auth;
 
 class DocumentController extends Controller
 {
@@ -54,7 +55,12 @@ class DocumentController extends Controller
      */
     public function create(Document $document)
     {
-        return view('documents.create', ['document' => $document]);
+        if (Auth::check()){
+            return view('documents.create', ['document' => $document]);
+        } else{
+            abort(403);
+        }
+
     }
 
     /**
