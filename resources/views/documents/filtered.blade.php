@@ -63,7 +63,6 @@
                                     @endforeach
                                 </select>
                             </td>
-                            <td>{{ $document->language }}</td>
                             <td>{{ $document->updated_at }}</td>
                             <td><a href="{{ route('documents.edit', $document->id) }}">Edit</a></td>
                         </tr>
