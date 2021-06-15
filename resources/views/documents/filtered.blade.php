@@ -5,7 +5,6 @@
     <form method="POST" action="/showFiltered">
         @csrf
         <div id="parentDiv">
-
             <div id="filterOptions">
                 <p class="header"> Taal </p>
                 @foreach($filters as $filter)

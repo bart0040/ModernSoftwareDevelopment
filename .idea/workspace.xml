@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="545dbe48-f87b-4f26-b58f-dc2838e89462" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/files/files/4EJnOYIKC6z8ChxdIDOPgAGvjLoKSDr5RejUVmmv.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/files/files/DFXlpIYhlGUR8VnRQlL6eAl6FXjiBNmoUEnZW4QE.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/files/files/TixBZBguI7vOwWoaz0ElAy0AODYIY6o24cAttYOW.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/files/files/cddN4Qa3ooFpbH6LyOzhdDIBG6lZwNrkVdQQXha2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/files/files/pGBUpBKH7Rijf6EYtn5b3u5WY6l0RJ1pvAUVS7Jr.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/documents/filtered.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents/filtered.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/documents/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/documents/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
@@ -335,7 +333,7 @@
       <workItem from="1623697817516" duration="1684000" />
       <workItem from="1623744769822" duration="1202000" />
       <workItem from="1623745994674" duration="78000" />
-      <workItem from="1623746085918" duration="480000" />
+      <workItem from="1623746085918" duration="1216000" />
     </task>
     <servers />
   </component>
