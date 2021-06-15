@@ -73,8 +73,12 @@
             <br>
         </div>
     </form>
-    <a href="/documents/create">
-        <button class="button" id="addDocBut"> Add new document</button>
-    </a>
+
+
+    @if(Auth::check())
+        <a href="/documents/create">
+            <button class="button" id="addDocBut"> Add new document</button>
+        </a>
+    @endif
 
 @endsection
