@@ -3,6 +3,7 @@
 @section('content')
     @if(Auth::check())
         <h1 id="editH1">Edit document {{$document->document_name}}</h1>
+        <br>
         <form method="POST" action="{{ route('documents.update', $document) }}">
             @csrf
             @method('PUT')
@@ -21,6 +22,10 @@
                 <p class="help is-danger">{{ $message }}</p>
                 @enderror
             </div>
+
+            <br>
+            <br>
+            <label class="label">Filters: </label>
             <br>
             @foreach($filters as $filter)
                 <br>
@@ -35,7 +40,7 @@
                 </div>
             @endforeach
             <br>
-
+            <br>
             <div class="field">
                 <label class="label">Document name: </label>
                 <div class="control">
@@ -49,7 +54,8 @@
                 <p class="help is-danger">{{ $message }}</p>
                 @enderror
             </div>
-
+            <br>
+            <br>
             <div class="field">
                 <label class="label">Author: </label>
                 <div class="control">
@@ -63,7 +69,8 @@
                 <p class="help is-danger">{{ $message }}</p>
                 @enderror
             </div>
-
+            <br>
+            <br>
             <div class="field">
                 <label class="label">Document: </label>
                 <div class="control">
@@ -77,11 +84,13 @@
                 <p class="help is-danger">{{ $message }}</p>
                 @enderror
             </div>
-
+            <br>
+            <br>
             <div class="field">
                 <label class="label">Keywords: </label>
-
             </div>
+            <br>
+            <br>
             <div class="control">
                 <table id="keywordsTable">
 
