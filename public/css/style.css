@@ -242,14 +242,14 @@ padding-left: 282px;
 
 #filterOptions{
     border: black solid 1px;
-    width: 13%;
+    width: 16%;
     margin-right: 5%;
     float: left;
 }
 
 #tableDiv{
     float: left;
-    width: 80%;
+    width: 70%;
 }
 
 #lightBlue{
