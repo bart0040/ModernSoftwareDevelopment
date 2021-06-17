@@ -2,11 +2,15 @@
 
 @section('content')
     <br>
-    <form method="POST" action="/showFiltered">
+    <form method="POST" action="/search&filter">
         @csrf
         <div id="parentDiv">
             <div id="filterOptions">
                 <div id="filterMargin"></div>
+                <p class="header">Search</p>
+                <input type="text" name="search" value="@isset($search) {{$search}} @endisset"/>
+                <br>
+                <br>
                 <p class="header"> Taal </p>
                 @foreach($filters as $filter)
                     <input
@@ -14,7 +18,14 @@
                         id="name"
                         name="filters[]"
                         value="{{ $filter->id }}"
-                        type="checkbox">
+                        type="checkbox"
+                        @isset($filterIds)
+                        @foreach($filterIds as $id)
+                        @if($id == $filter->id)
+                        checked
+                     @endif
+                     @endforeach
+                        @endisset>
                     <label>{{ $filter->filterName }}</label>
                     <br>
                     @if($filter->id == 3)

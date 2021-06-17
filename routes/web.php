@@ -23,6 +23,7 @@ Route::resource('/', DocumentController::class);
 Route::resource('/documents', DocumentController::class);
 Route::post('/documents/keywords', [KeywordController::class, 'store'])->name('addkeywords');
 Route::resource('/filter', Filtercontroller::class, ['except' => ['create', 'show']]);
+Route::post('/search&filter', [DocumentController::class, 'searchFilterBoth']);
 Route::post('/showFiltered', [DocumentController::class, 'showFiltered']);
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/search', 'App\Http\Controllers\SearchController@search')->name('search');

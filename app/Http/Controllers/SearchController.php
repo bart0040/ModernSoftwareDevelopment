@@ -10,10 +10,10 @@ use Illuminate\Http\Request;
 
 class SearchController extends Controller
 {
-    public function search(Request $request)
+    public function search($data)
     {
         // Get the search value from the request
-        $search = $request->input('search');
+        $search = $data->input('search');
 
         $filters = Filter::all();
 
@@ -33,6 +33,8 @@ class SearchController extends Controller
 
             $documents->push($keyword->document);
         }
+
+        $documents = $documents->unique();
 
         // Return the search view with the results compacted
         return view('documents.index')
