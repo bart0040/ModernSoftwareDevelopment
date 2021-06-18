@@ -10,6 +10,21 @@
 
             {{-- Here are all the form fields --}}
             <div class="field">
+                <label class="label">Author: </label>
+                <div class="control">
+                    <input
+                        name="author"
+                        class="input @error('author') is-danger @enderror"
+                        type="text"
+                        value="{{ old('author', $document->author) }}">
+                </div>
+                @error('author')
+                <p class="help is-danger">{{ $message }}</p>
+                @enderror
+            </div>
+            <br>
+            <br>
+            <div class="field">
                 <label class="label">Project name: </label>
                 <div class="control">
                     <input
@@ -51,36 +66,6 @@
                         value="{{ old('document_name', $document->document_name) }}">
                 </div>
                 @error('document_name')
-                <p class="help is-danger">{{ $message }}</p>
-                @enderror
-            </div>
-            <br>
-            <br>
-            <div class="field">
-                <label class="label">Author: </label>
-                <div class="control">
-                    <input
-                        name="author"
-                        class="input @error('author') is-danger @enderror"
-                        type="text"
-                        value="{{ old('author', $document->author) }}">
-                </div>
-                @error('author')
-                <p class="help is-danger">{{ $message }}</p>
-                @enderror
-            </div>
-            <br>
-            <br>
-            <div class="field">
-                <label class="label">Document: </label>
-                <div class="control">
-                    <input
-                        name="document"
-                        class="input @error('document') is-danger @enderror"
-                        type="text"
-                        value="{{ old('document', $document->document_name) }}">
-                </div>
-                @error('document')
                 <p class="help is-danger">{{ $message }}</p>
                 @enderror
             </div>
