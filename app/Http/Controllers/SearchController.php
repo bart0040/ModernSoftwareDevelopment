@@ -18,7 +18,7 @@ class SearchController extends Controller
 
         $filters = Filter::all();
 
-        if (env('DB_CONNECTION') === 'mysql') {
+        if (env('DB_CONNECTION') === 'pgsql') {
             $documents = Document::where('project_name', 'LIKE', "%{$search}%")
                 ->orWhere('document_name', 'LIKE', "%{$search}%")
                 ->orWhere('author', 'LIKE', "%{$search}%")
