@@ -4,7 +4,7 @@
     @if(Auth::check())
         <h1 id="editH1">Edit document {{$document->document_name}}</h1>
         <br>
-        <form method="POST" action="{{ route('documents.update', $document) }}">
+        <form method="POST" action="{{ route('documents.update', $document) }}" enctype="multipart/form-data">
             @csrf
             @method('PUT')
 
@@ -109,6 +109,23 @@
                 </table>
             </div>
             <br>
+
+            <a class="button" href="/files/{{$document->file_path}}">Download Current Document</a>
+
+            <br>
+            <br>
+            <br>
+
+            <p class="font-size: 5px;"> Adding an Updated Document will delete the old one! </p>
+
+            <div class="field">
+                <label for="document" class="label"><strong>Updated Document:</strong></label>
+                <input
+                    class="input"
+                    type="file"
+                    id="document"
+                    name="document">
+            </div>
 
             {{-- Here are the form buttons: save, reset and cancel --}}
             <div class="outer">

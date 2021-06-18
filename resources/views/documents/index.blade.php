@@ -4,7 +4,7 @@
 
     @if(Auth::check())
         <a href="/documents/create">
-            <button style="margin-left: 413px" class="button" id="addDocBut"> Add new document</button>
+            <button style="margin-left: 23.82%;" class="button" id="addDocBut"> Add new document</button>
         </a>
     @endif
     <br>

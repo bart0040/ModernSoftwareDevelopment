@@ -222,14 +222,25 @@ class DocumentController extends Controller
         $document->keywords()->delete();
         $document->filters()->sync($request->filters);
 
+        if($request->file('document') == null){
+            $request->merge(['file_path' => $document->file_path]);
+        }else{
+            //removes old file
+            $path = public_path() . "/files/" . $document->file_path;
+            if(file_exists($path)){
+                unlink($path);
+            }
+            //adds new file
+            $path = $request->file('document')->store('files');
+            $request->merge(['file_path' => $path]);
+        }
+
         $document_id = $document->id;
 
         /**
          * The foreach is responsible for making an array of keywords and keeping the correct document id
          */
-        if ($request->keywords_name === null) {
-            redirect(route('documents.index'));
-        } else {
+        if ($request->keywords_name != null) {
             foreach ($request->keywords_name as $keyword_name) {
                 \DB::table('keywords')->insert(array('keyword' => $keyword_name, 'document_id' => $document_id));
             }
@@ -249,8 +260,10 @@ class DocumentController extends Controller
      */
     public function destroy(Document $document)
     {
-        $path = $path = public_path() . "/files/" . $document->file_path;
+        $path = public_path() . "/files/" . $document->file_path;
+        if(file_exists($path)){
         unlink($path);
+        }
         $document->delete();
         return redirect(route('documents.index'))->with('status', 'document is deleted');
     }
