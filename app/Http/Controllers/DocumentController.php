@@ -37,46 +37,46 @@ class DocumentController extends Controller
     {
         $data = $request;
 
-        if ($request->search != null && $request->filters != null ){
+        if ($request->search != null && $request->filters != null) {
             $search = $request->input('search');
 
             $filters = Filter::all();
-    
-    
+
+
             $keywordDocs = Document::query()
                 ->where('project_name', 'LIKE', "%{$search}%")
                 ->orWhere('document_name', 'LIKE', "%{$search}%")
                 ->orWhere('author', 'LIKE', "%{$search}%")
                 ->get();
-    
+
             $keywords = Keyword::query()
                 ->where('keyword', 'LIKE', "%{$search}%")
                 ->get();
-    
+
             foreach ($keywords as $keyword) {
-    
-    
+
+
                 $keywordDocs->push($keyword->document);
             }
             $keywordDocs = $keywordDocs->unique();
 
             $filterIds = $request->filters;
-            if($filterIds === null){
-            return redirect('/documents');
+            if ($filterIds === null) {
+                return redirect('/documents');
             }
 
             $filterDocs = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds) {
-            $q->whereIn('filter_id', $filterIds);
+                $q->whereIn('filter_id', $filterIds);
             }, '=', count($filterIds))->get();
 
             $documents = $keywordDocs->intersect($filterDocs);
 
             return view('documents.index', compact('documents', 'filters', 'filterIds', 'search'));
 
-        } elseif ($request->search != null && $request->filters == null){
+        } elseif ($request->search != null && $request->filters == null) {
             return $this->search($data);
 
-        } elseif($request->search == null && $request->filters != null){
+        } elseif ($request->search == null && $request->filters != null) {
             return $this->showFiltered($data);
         } else {
             return redirect('/documents');
@@ -86,7 +86,7 @@ class DocumentController extends Controller
     public function showFiltered($data)
     {
         $filterIds = $data->filters;
-        if($filterIds === null){
+        if ($filterIds === null) {
             return redirect('/documents');
         }
         $filters = Filter::all();
@@ -138,9 +138,9 @@ class DocumentController extends Controller
      */
     public function create(Document $document)
     {
-        if (Auth::check()){
+        if (Auth::check()) {
             return view('documents.create', ['document' => $document]);
-        } else{
+        } else {
             abort(403);
         }
 
@@ -222,13 +222,19 @@ class DocumentController extends Controller
         $document->keywords()->delete();
         $document->filters()->sync($request->filters);
 
+        $document_id = $document->id;
+
         /**
          * The foreach is responsible for making an array of keywords and keeping the correct document id
          */
-        foreach ($request->keywords_name as $keyword_name) {
-            \DB::table('keywords')->insert(array('keyword' => $keyword_name, 'document_id' => $document->id));
-
+        if ($request->keywords_name === null) {
+            redirect(route('documents.index'));
+        } else {
+            foreach ($request->keywords_name as $keyword_name) {
+                \DB::table('keywords')->insert(array('keyword' => $keyword_name, 'document_id' => $document_id));
+            }
         }
+
 
         $document->update($this->validateDocument($request));
         return redirect('/documents');
@@ -243,7 +249,7 @@ class DocumentController extends Controller
      */
     public function destroy(Document $document)
     {
-        $path = $path = public_path()."/files/".$document->file_path;
+        $path = $path = public_path() . "/files/" . $document->file_path;
         unlink($path);
         $document->delete();
         return redirect(route('documents.index'))->with('status', 'document is deleted');
