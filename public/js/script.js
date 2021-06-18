@@ -3,13 +3,12 @@
  *
  */
 function addKeyword() {
-    document.getElementById("keywordsTable").insertRow().innerHTML =
-        "<tr><td>" +
-        "<input class='input' name='keywords_name[]' id='keywords' type='text' placeholder='Keyword here please...' value='' required>" +
-        "</td><td><button type='button' class='button' id='button2' value='Delete' onclick='deleteRow(this)'>-</button>" +
-        "</td><td>" +
-        "</td></tr>";
-
+    document.getElementById("keywordsTable").insertRow().innerHTML =`
+        <tr><td>
+        <input class='input' name='keywords_name[]' id='keywords' type='text' placeholder='Keyword here please...' value='' required>
+        </td><td><button type='button' class='button' id='button2' value='Delete' onclick='deleteRow(this)'>-</button>
+        </td><td>
+        </td></tr>`
 }
 
 /**

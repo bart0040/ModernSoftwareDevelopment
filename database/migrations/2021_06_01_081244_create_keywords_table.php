@@ -18,6 +18,10 @@ class CreateKeywordsTable extends Migration
             $table->id();
             $table->string('keyword')->nullable();
             $table->timestamps();
+
+            /**
+             * These two lines are responsible for the correct connection with the document.
+             */
             $table->unsignedBigInteger('document_id')->nullable();
             $table->foreign('document_id')->references('id')->on('documents')->onDelete('cascade');
 
