@@ -13,9 +13,12 @@ class SearchController extends Controller
     public function search($data)
     {
         // Get the search value from the request
-        $search = $data->input('search');
+
+        $search = strtolower($data->input('search'));
 
         $filters = Filter::all();
+
+
 
 
         $documents = Document::query()
