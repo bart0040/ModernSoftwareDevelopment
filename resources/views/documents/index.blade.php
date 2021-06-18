@@ -12,7 +12,7 @@
         @csrf
         <div id="parentDiv">
 
-            <div id="filterOptions">
+            <div class="box" id="filterOptions">
                 <div id="filterMargin"></div>
                 <p class="header">Search</p>
                 <input type="text" name="search" value="@isset($search) {{$search}} @endisset"/>
@@ -20,6 +20,7 @@
                 <br>
                 <p class="header"> Taal </p>
                 @foreach($filters as $filter)
+                <label>
                     <input
                         class="form-control"
                         id="name"
@@ -33,15 +34,17 @@
                      @endif
                      @endforeach
                         @endisset>
-                    <label>{{ $filter->filterName }}</label>
+                    {{ $filter->filterName }}</label>
                     <br>
                     @if($filter->id == 3)
                         <br>
                         <p class="header"> Bestandstype </p>
                     @endif
                 @endforeach
+                <br>
 
                 <input
+                class="button is-info"
                     type="submit"
                     value="Submit"
                     class="submitFilter">
@@ -72,6 +75,7 @@
                         <td>{{ $document->author }}</td>
                         <td><a href="/files/{{$document->file_path}}">Download File</a></td>
                         <td>
+                            <div class="select">
                             <select>
                                 @foreach($document->keywords as $keyword)
                                     <option value="keyword">
@@ -79,6 +83,7 @@
                                     </option>
                                 @endforeach
                             </select>
+                            </div>
                         </td>
                         <td>{{ $document->updated_at }}</td>
                         @if(Auth::check())
@@ -92,6 +97,7 @@
         <br>
         </div>
     </form>
+    <br>
 
 
 
