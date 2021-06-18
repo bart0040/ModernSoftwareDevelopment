@@ -19,26 +19,22 @@ class SearchController extends Controller
         $filters = Filter::all();
 
         if (env('DB_CONNECTION') === 'mysql') {
-            $documents = Document::query()
-                ->where('project_name', 'LIKE', "%{$search}%")
+            $documents = Document::where('project_name', 'LIKE', "%{$search}%")
                 ->orWhere('document_name', 'LIKE', "%{$search}%")
                 ->orWhere('author', 'LIKE', "%{$search}%")
                 ->get();
 
-            $keywords = Keyword::query()
-                ->where('keyword', 'LIKE', "%{$search}%")
+            $keywords = Keyword::where('keyword', 'LIKE', "%{$search}%")
                 ->get();
         } else {
 
 
-            $documents = Document::query()
-                ->where(DB::raw('lower(project_name)'), 'like', '%' . strtolower($search) . '%')
+            $documents = Document::where(DB::raw('lower(project_name)'), 'like', '%' . strtolower($search) . '%')
                 ->orWhere(DB::raw('lower(document_name)'), 'like', '%' . strtolower($search) . '%')
                 ->orWhere(DB::raw('lower(author)'), 'like', '%' . strtolower($search) . '%')
                 ->get();
 
-            $keywords = Keyword::query()
-            ->where(DB::raw('lower(keyword)'), 'like', '%' . strtolower($search) . '%')
+            $keywords = Keyword::where(DB::raw('lower(keyword)'), 'like', '%' . strtolower($search) . '%')
                 ->get();
         }
 
