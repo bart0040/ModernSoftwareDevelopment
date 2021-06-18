@@ -45,7 +45,7 @@ class SearchController extends Controller
             $documents->push($keyword->document);
         }
 
-        $documents = $documents->unique();
+//        $documents = $documents->unique();
 
         // Return the search view with the results compacted
         return view('documents.index')
