@@ -14,7 +14,9 @@ class SearchController extends Controller
     {
         // Get the search value from the request
 
-        $search = strtolower($data->input('search'));
+        $i = $data->input('search');
+
+        $search = strtolower($i);
 
         $filters = Filter::all();
 
