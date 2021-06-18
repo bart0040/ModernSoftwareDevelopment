@@ -13,24 +13,19 @@ class SearchController extends Controller
     public function search($data)
     {
         // Get the search value from the request
-
-        $i = $data->input('search');
-
-        $search = strtolower($i);
+        $search = $data->input('search');
 
         $filters = Filter::all();
 
 
-
-
         $documents = Document::query()
-            ->where('project_name', 'LIKE', "%{$search}%")
-            ->orWhere('document_name', 'LIKE', "%{$search}%")
-            ->orWhere('author', 'LIKE', "%{$search}%")
+            ->where('project_name', 'ILIKE', "%{$search}%")
+            ->orWhere('document_name', 'ILIKE', "%{$search}%")
+            ->orWhere('author', 'ILIKE', "%{$search}%")
             ->get();
 
         $keywords = Keyword::query()
-            ->where('keyword', 'LIKE', "%{$search}%")
+            ->where('keyword', 'ILIKE', "%{$search}%")
             ->get();
 
         foreach ($keywords as $keyword) {
