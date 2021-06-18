@@ -125,6 +125,10 @@ inputKeyword{
     /*width: calc(100% - 200px);*/
 }
 
+.button{
+    float: left;
+}
+
 #button1 {
     background-color: lightgreen;
 }

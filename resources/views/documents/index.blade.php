@@ -1,10 +1,17 @@
 @extends('layout')
 
 @section('content')
+
+    @if(Auth::check())
+        <a href="/documents/create">
+            <button style="margin-left: 413px" class="button" id="addDocBut"> Add new document</button>
+        </a>
+    @endif
     <br>
     <form method="POST" action="/search&filter">
         @csrf
         <div id="parentDiv">
+
             <div id="filterOptions">
                 <div id="filterMargin"></div>
                 <p class="header">Search</p>
@@ -86,10 +93,6 @@
         </div>
     </form>
 
-    @if(Auth::check())
-        <a href="/documents/create">
-            <button class="button" id="addDocBut"> Add new document</button>
-        </a>
-    @endif
+
 
 @endsection
