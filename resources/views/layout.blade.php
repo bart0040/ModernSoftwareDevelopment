@@ -38,7 +38,7 @@
     </ul>
 </nav>
 
-<img src="/healthyregion-banner.jpg">
+<img src="{{asset('/img/healthyregion-banner.jpg')}}">
 
 
 <!--Menu-->
@@ -52,10 +52,7 @@
 
     </div>
 </ul>
-<form class="search" action="{{ route('search') }}" method="GET">
-    <input type="text" name="search" required/>
-    <button type="submit">Search</button>
-</form>
+
 
 @yield('content')
 </div>
