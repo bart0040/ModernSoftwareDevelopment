@@ -7,6 +7,7 @@ use App\Models\Document;
 use App\Models\Filter;
 use App\Models\Keyword;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SearchController extends Controller
 {
@@ -29,17 +30,17 @@ class SearchController extends Controller
                 ->get();
         } else {
 
+
             $documents = Document::query()
-                ->where('project_name', 'ILIKE', "%{$search}%")
-                ->orWhere('document_name', 'ILIKE', "%{$search}%")
-                ->orWhere('author', 'ILIKE', "%{$search}%")
+                ->where(DB::raw('lower(project_name)'), 'like', '%' . strtolower($search) . '%')
+                ->orWhere(DB::raw('lower(document_name)'), 'like', '%' . strtolower($search) . '%')
+                ->orWhere(DB::raw('lower(author)'), 'like', '%' . strtolower($search) . '%')
                 ->get();
 
             $keywords = Keyword::query()
-                ->where('keyword', 'ILIKE', "%{$search}%")
+            ->where(DB::raw('lower(keyword)'), 'like', '%' . strtolower($search) . '%')
                 ->get();
         }
-
 
 
         foreach ($keywords as $keyword) {
