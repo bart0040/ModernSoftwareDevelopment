@@ -15,6 +15,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Auth;
 
 class DocumentController extends Controller
 {
@@ -32,18 +33,101 @@ class DocumentController extends Controller
         return view('documents.index', compact('documents', 'filters'));
     }
 
-    public function showFiltered(Request $request)
+    public function searchFilterBoth(Request $request)
     {
-        $filterIds = $request->filters;
+        $data = $request;
+
+        if ($request->search != null && $request->filters != null ){
+            $search = $request->input('search');
+
+            $filters = Filter::all();
+    
+    
+            $keywordDocs = Document::query()
+                ->where('project_name', 'LIKE', "%{$search}%")
+                ->orWhere('document_name', 'LIKE', "%{$search}%")
+                ->orWhere('author', 'LIKE', "%{$search}%")
+                ->get();
+    
+            $keywords = Keyword::query()
+                ->where('keyword', 'LIKE', "%{$search}%")
+                ->get();
+    
+            foreach ($keywords as $keyword) {
+    
+    
+                $keywordDocs->push($keyword->document);
+            }
+            $keywordDocs = $keywordDocs->unique();
+
+            $filterIds = $request->filters;
+            if($filterIds === null){
+            return redirect('/documents');
+            }
+
+            $filterDocs = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds) {
+            $q->whereIn('filter_id', $filterIds);
+            }, '=', count($filterIds))->get();
+
+            $documents = $keywordDocs->intersect($filterDocs);
+
+            return view('documents.index', compact('documents', 'filters', 'filterIds', 'search'));
+
+        } elseif ($request->search != null && $request->filters == null){
+            return $this->search($data);
+
+        } elseif($request->search == null && $request->filters != null){
+            return $this->showFiltered($data);
+        } else {
+            return redirect('/documents');
+        }
+    }
+
+    public function showFiltered($data)
+    {
+        $filterIds = $data->filters;
         if($filterIds === null){
             return redirect('/documents');
         }
         $filters = Filter::all();
-        $z = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds) {
+        $documents = Document::with('filters')->whereHas('filters', function ($q) use ($filterIds) {
             $q->whereIn('filter_id', $filterIds);
         }, '=', count($filterIds))->get();
 
-        return view('documents.filtered', compact('z', 'filters', 'filterIds'));
+        return view('documents.index', compact('documents', 'filters', 'filterIds'));
+    }
+
+    public function search($data)
+    {
+        // Get the search value from the request
+        $search = $data->input('search');
+
+        $filters = Filter::all();
+
+
+        $documents = Document::query()
+            ->where('project_name', 'LIKE', "%{$search}%")
+            ->orWhere('document_name', 'LIKE', "%{$search}%")
+            ->orWhere('author', 'LIKE', "%{$search}%")
+            ->get();
+
+        $keywords = Keyword::query()
+            ->where('keyword', 'LIKE', "%{$search}%")
+            ->get();
+
+        foreach ($keywords as $keyword) {
+
+
+            $documents->push($keyword->document);
+        }
+
+        $documents = $documents->unique();
+
+        // Return the search view with the results compacted
+        return view('documents.index')
+            ->with(compact('documents'))
+            ->with(compact('search'))
+            ->with(compact('filters'));
     }
 
     /**
@@ -54,7 +138,12 @@ class DocumentController extends Controller
      */
     public function create(Document $document)
     {
-        return view('documents.create', ['document' => $document]);
+        if (Auth::check()){
+            return view('documents.create', ['document' => $document]);
+        } else{
+            abort(403);
+        }
+
     }
 
     /**
