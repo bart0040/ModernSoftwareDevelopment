@@ -138,7 +138,7 @@
             <br>
             <br>
 
-            <p class="font-size: 5px;"> Adding an Updated Document will delete the old one! </p>
+            <p class="has-text-danger font-size: 5px;"> Adding an Updated Document will delete the old one! </p>
 
             <div class="field">
                 <label for="document" class="label"><strong>Updated Document:</strong></label>
