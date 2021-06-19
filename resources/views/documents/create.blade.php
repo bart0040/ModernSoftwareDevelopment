@@ -108,7 +108,7 @@
         <div class="field">
             <label for="document_name" class="label"><strong>Document Name:</strong></label>
             <div class="control">
-                <input class="input" type="text" id="document_name" name="document_name">
+                <input class="input" type="text" id="document_name" name="document_name" required>
             </div>
         </div>
 
@@ -139,7 +139,7 @@
 
         <div class="field">
             <label for="document" class="label"><strong>Document:</strong></label>
-            <input class="input" type="file" id="document" name="document">
+            <input class="input" type="file" id="document" name="document" required>
         </div>
 
 

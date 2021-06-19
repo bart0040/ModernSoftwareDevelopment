@@ -164,9 +164,11 @@ class DocumentController extends Controller
 
         $document_id = $document->id;
 
+        if($request->filter_ids != null){
         foreach ($request->filter_ids as $filter_id) {
             \DB::table('junctions')->insert(array('document_id' => $document_id, 'filter_id' => $filter_id));
         }
+    }
 
         /**
          * The foreach is responsible for making an array of keywords and keeping the correct document id
