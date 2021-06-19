@@ -1,10 +1,16 @@
 @extends('layout')
 
 @section('content')
+<style>
+    h1 {
+        font-size: 120%;
+    }
+
+</style>
     @if(Auth::check())
         <h1 id="editH1">Edit document {{$document->document_name}}</h1>
         <br>
-        <form method="POST" action="{{ route('documents.update', $document) }}">
+        <form method="POST" action="{{ route('documents.update', $document) }}" enctype="multipart/form-data">
             @csrf
             @method('PUT')
 
@@ -40,20 +46,36 @@
 
             <br>
             <br>
-            <label class="label">Filters: </label>
             <br>
+            <div class="columns">
+                <div class="column">
+                    <div class="box">
+                        <h1><strong>Language filters</strong></h1>
             @foreach($filters as $filter)
                 <br>
                 <div class="field">
+                    <label>
                     <input class="form-control" id="name" name="filters[]" value="{{ $filter->id }}" type="checkbox"
                            @foreach($filterIds as $id)
                            @if($id == $filter->id)
                            checked
                         @endif
                         @endforeach>
-                    <label>{{ $filter->filterName }}</label>
+                    {{ $filter->filterName }}</label>
                 </div>
+                @if($filter->id == 3)
+                <br>
+            </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <h1><strong>File type filters</strong></h1>
+                    @endif
             @endforeach
+            <br>
+                    </div>
+                </div>
+            </div>
             <br>
             <br>
             <div class="field">
@@ -109,6 +131,23 @@
                 </table>
             </div>
             <br>
+
+            <a class="button" href="/files/{{$document->file_path}}">Download Current Document</a>
+
+            <br>
+            <br>
+            <br>
+
+            <p class="has-text-danger font-size: 5px;"> Adding an Updated Document will delete the old one! </p>
+
+            <div class="field">
+                <label for="document" class="label"><strong>Updated Document:</strong></label>
+                <input
+                    class="input"
+                    type="file"
+                    id="document"
+                    name="document">
+            </div>
 
             {{-- Here are the form buttons: save, reset and cancel --}}
             <div class="outer">
