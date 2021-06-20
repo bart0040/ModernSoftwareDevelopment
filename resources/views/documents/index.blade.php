@@ -2,11 +2,13 @@
 
 @section('content')
 
+    @can('test')
     @if(Auth::check())
         <a href="/documents/create">
             <button style="margin-left: 23.82%;" class="button" id="addDocBut"> Add new document</button>
         </a>
     @endif
+    @endcan
     <br>
     <form method="POST" action="/search&filter">
         @csrf
@@ -62,9 +64,11 @@
                     <th>Document</th>
                     <th>Keywords</th>
                     <th>Created at</th>
+                    @can('test')
                     @if(Auth::check())
                         <th>Edit</th>
                     @endif
+                    @endcan
                 </tr>
                 </thead>
                 <tbody>
@@ -86,9 +90,11 @@
                             </div>
                         </td>
                         <td>{{ $document->updated_at }}</td>
+                        @can('test')
                         @if(Auth::check())
                             <td><a href="{{ route('documents.edit', $document->id) }}">Edit</a></td>
                         @endif
+                        @endcan()
                     </tr>
                 @endforeach
                 </tbody>

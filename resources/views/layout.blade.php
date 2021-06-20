@@ -25,9 +25,6 @@
             <li class="login">
                 <a href="/login" {{ Request::path() === 'login' ? "is-active" : "" }}"> Log in </a>
             </li>
-            <li class="register" id="lightBlue">
-                <a href="/register" {{ Request::path() === 'register' ? "is-active" : "" }}"> Register </a>
-            </li>
         @endif
 
         <li class="name">
@@ -46,10 +43,8 @@
 <ul>
     <div class="wrapper" id="navBar">
         <li class="documents">
-            <a href="/documents" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
+            <a href="/" {{ Request::path() === 'documents' ? "is-active" : "" }}"> Documents </a>
         </li>
-
-
     </div>
 </ul>
 
