@@ -221,6 +221,7 @@ class DocumentController extends Controller
      */
     public function update(Request $request, Document $document)
     {
+
         $document->keywords()->delete();
         $document->filters()->sync($request->filters);
 

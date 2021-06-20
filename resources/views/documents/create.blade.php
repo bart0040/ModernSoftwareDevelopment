@@ -2,6 +2,7 @@
 
 @section('content')
 
+    @can('test')
     <style>
         h1 {
             font-size: 120%;
@@ -11,21 +12,21 @@
 
     <form action="/documents" method="POST" enctype="multipart/form-data">
         @csrf
-    
+
                 <div class="field">
                     <label for="author" class="label"><strong>Author:</strong></label>
                     <div class="control">
                         <input class="input" type="text" id="author" name="author" required>
                     </div>
                 </>
-            
+
                 <div class="field">
                     <label for="project_name" class="label"><strong>Project Name:</strong></label>
                     <div class="control">
                         <input class="input" type="text" id="project_name" name="project_name" required>
                     </div>
                 </div>
-            
+
         <div class="columns">
             <div class="column">
                 <div class="box">
@@ -149,6 +150,6 @@
     <form action="/documents" method="GET">
         <input type="submit" class="button" id="button3" value="Cancel">
     </form>
-
+    @endcan
 
 @endsection

@@ -1,6 +1,8 @@
 @extends('layout')
 
 @section('content')
+
+    @can('test')
 <style>
     h1 {
         font-size: 120%;
@@ -197,6 +199,7 @@
         </form>
     @endguest
 @endsection
+@endcan
 
 
 
