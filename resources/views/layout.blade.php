@@ -16,8 +16,6 @@
     <ul class="ul">
 
         @if(Auth::check())
-
-
             <li class="logout">
                 <a href="{{ url('/logout') }}"> Log out </a>
             </li>
