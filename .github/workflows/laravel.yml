@@ -16,7 +16,7 @@ jobs:
       with:
         php-version: '8.0'
     - uses: actions/checkout@v2
-    -uses: overtrue/phplint@8.0
+    - uses: overtrue/phplint@8.0
       with:
       path: .
       options: --exclude=*.log
