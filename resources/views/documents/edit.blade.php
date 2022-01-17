@@ -10,7 +10,7 @@
 
 </style>
     @if(Auth::check())
-        <h1 id="editH1">Edit document {{$document->document_name}}</h1>
+        <h1 id="editH1">Edit document. {{$document->document_name}}</h1>
         <br>
         <form method="POST" action="{{ route('documents.update', $document) }}" enctype="multipart/form-data">
             @csrf
