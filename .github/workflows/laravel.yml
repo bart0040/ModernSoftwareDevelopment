@@ -16,7 +16,10 @@ jobs:
       with:
         php-version: '8.0'
     - uses: actions/checkout@v2
-    - uses: michaelw90/PHP-Lint@master
+    -uses: overtrue/phplint@8.0
+      with:
+        path: .
+        options: --exclude=*.log
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Install Dependencies
